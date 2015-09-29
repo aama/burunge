@@ -1,6 +1,9 @@
 {
 :lang :burunge
 :sgpref "brn"
+:datasource "Kiessling1994"
+:geodemoURL "http://www.ethnologue.com/language/bds"
+:geodemoTXT "Varieties and subdialects of Burunge are spoken in "
 :schemata {
 :affirmationType [:Base, :Declarative, :Interrogative]
 	  :case [:Ablative, :Allative]
@@ -144,7 +147,7 @@
 	    [:Common, :Plural, :Person2, "_NULL"],
 	    [:Common, :Plural, :Person3, "_NULL"]]
     }
-    {:label "burunge-VNegVerbal noun-doosl"
+    {:label "burunge-VNegVerbalnoun-doosl"
     :note "Kiessling1994 # 9.5.3. Der adjektivische Charakter des Negationssuffixes -baɬi.
             This is a nominal type negative construction. The adjectivally inflected baɬ comes
             inbetween the selector and the verbal noun form of the verb. Paradigm gives by way of
@@ -294,7 +297,7 @@
 	    [:Common, :Plural, :Person2, "‘unkuray háa dooɬidirĭ"],
 	    [:Common, :Plural, :Person3, "inay yáa dooɬiĭ"]]
     }
-    {:label "burunge-VImperfUnmrkStem-qaat(alt)"
+    {:label "burunge-VImperfUnmrkStem-qaat-alt"
     :note "Kiessling1994 #7.1.1.2.5"
     :common {:lexeme :qaat-alt,
 	    :pos :Verb,
@@ -729,7 +732,7 @@
 	    [:Common, :Plural, :Person3, "‘inay ħanti dooɬiyay"]]
     }
     {:label "burunge-VInterrSubjunctiveUnmrkStemBaseForm-koom"
-    :note "Kiessling1994 ## 7.2.2,7.2.3"
+    :note "Kiessling1994 # 7.2.2 & 7.2.3"
     :common {:affirmationType :Interrogative,
 	    :lexeme :koom,
 	    :pos :Verb,
@@ -745,7 +748,7 @@
 	    [:Common, :Plural, :Person2, "kontee’i"],
 	    [:Common, :Plural, :Person3, "konee’i"]]
     }
-    {:label "burunge-VImprtvWithObj-ki`"
+    {:label "burunge-VImprtvWithObj-ki"
     :note "Kiessling1994"
     :common {:lexeme :ki,
 	    :person :Person2,
