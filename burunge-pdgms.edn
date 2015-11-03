@@ -156,7 +156,7 @@
 	    :person :Person2,
 	    :polarity :Negative,
 	    :pos :Verb,
-	    :token-verb :dooɬa,
+	    :tkn-verb :dooɬa,
 	    :morphClass :Verbalnoun}
     :terms [[:gender, :number, :tenseSel, :token]  ;; schema
 	    [:Masc, :Singular, :Present, "hagu baɬu"],
@@ -2275,9 +2275,9 @@
     :common {:morpheme :NUMERALS,
 	    :morphClass :Numerals,
 	    :pos :Noun}
-    :terms [[:predType, :token, :token-numerals]  ;; schema
-	    [:Interrogative, "cada", "Person2"],
-	    [:Interrogative, "tami", "Person3"],
+    :terms [[:predType, :token, :token-note]  ;; schema
+	    [:Interrogative, "cada", "2"],
+	    [:Interrogative, "tami", "3"],
 	    [:Interrogative, "cigaħa", "4"],
 	    [:Interrogative, "koo’ani", "5"],
 	    [:Interrogative, "laħo’u", "6"],
@@ -2285,8 +2285,8 @@
 	    [:Interrogative, "dagati", "8"],
 	    [:Interrogative, "gweleli", "9"],
 	    [:Interrogative, "mibi", "10"],
-	    [:Declarative, "cadă", "Person2"],
-	    [:Declarative, "tamĭ", "Person3"],
+	    [:Declarative, "cadă", "2"],
+	    [:Declarative, "tamĭ", "3"],
 	    [:Declarative, "cigaħă", "4"],
 	    [:Declarative, "koo’anĭ", "5"],
 	    [:Declarative, "laħo’ŭ", "6"],
@@ -2344,21 +2344,21 @@
     :common {:morpheme :SUBJMARKERSELSTEM,
 	    :pos :Verb,
 	    :morphClass :SubjMarkerSelStem}
-    :terms [[:gender, :number, :person, :tam, :token-sel, :token-stemSuff, :token]  ;; schema
-	    [:Common, :Singular, :Person1, :Imperfect, "ha-", "-a", "ha- . . .   -a"],
-	    [:Common, :Singular, :Person2, :Imperfect, "ha-", "-ida", "ha- . . .   -ida"],
-	    [:Masc, :Singular, :Person3, :Imperfect, "hi-", "-i", "hi- . . .   -i"],
-	    [:Fem, :Singular, :Person3, :Imperfect, "hi-", "-ida", "hi- . . .   -ida"],
-	    [:Common, :Plural, :Person1, :Imperfect, "ha-", "-ana", "ha- . . .   -ana"],
-	    [:Common, :Plural, :Person2, :Imperfect, "ha-", "-ida’i", "ha- . . .   -ida’i"],
-	    [:Common, :Plural, :Person3, :Imperfect, "hi-", "-iya’i", "hi- . . .   -iya’i"],
-	    [:Common, :Singular, :Person1, :Perfect, "ha-", "-i", "ha- . . .   -i"],
-	    [:Common, :Singular, :Person2, :Perfect, "ha-", "-idi", "ha- . . .   -idi"],
-	    [:Masc, :Singular, :Person3, :Perfect, "hi-", "-i", "hi- . . .   -i"],
-	    [:Fem, :Singular, :Person3, :Perfect, "hi-", "-idi", "hi- . . .   -idi"],
-	    [:Common, :Plural, :Person1, :Perfect, "ha-", "-ani", "ha- . . .   -ani"],
-	    [:Common, :Plural, :Person2, :Perfect, "ha-", "-idiri", "ha- . . .   -idiri"],
-	    [:Common, :Plural, :Person3, :Perfect, "hi-", "-iri", "hi- . . .   -iri"]]
+    :terms [[:gender, :number, :person, :tam, :token-note-selSuff, :token]  ;; schema
+	    [:Common, :Singular, :Person1, :Imperfect, "ha- + -a", "ha- . . .   -a"],
+	    [:Common, :Singular, :Person2, :Imperfect, "ha- + -ida", "ha- . . .   -ida"],
+	    [:Masc, :Singular, :Person3, :Imperfect, "hi- + -i", "hi- . . .   -i"],
+	    [:Fem, :Singular, :Person3, :Imperfect, "hi- + -ida", "hi- . . .   -ida"],
+	    [:Common, :Plural, :Person1, :Imperfect, "ha- + -ana", "ha- . . .   -ana"],
+	    [:Common, :Plural, :Person2, :Imperfect, "ha- + -ida’i", "ha- . . .   -ida’i"],
+	    [:Common, :Plural, :Person3, :Imperfect, "hi- + -iya’i", "hi- . . .   -iya’i"],
+	    [:Common, :Singular, :Person1, :Perfect, "ha- + -i", "ha- . . .   -i"],
+	    [:Common, :Singular, :Person2, :Perfect, "ha- + -idi", "ha- . . .   -idi"],
+	    [:Masc, :Singular, :Person3, :Perfect, "hi- + -i", "hi- . . .   -i"],
+	    [:Fem, :Singular, :Person3, :Perfect, "hi- + -idi", "hi- . . .   -idi"],
+	    [:Common, :Plural, :Person1, :Perfect, "ha- + -ani", "ha- . . .   -ani"],
+	    [:Common, :Plural, :Person2, :Perfect, "ha- + -idiri", "ha- . . .   -idiri"],
+	    [:Common, :Plural, :Person3, :Perfect, "hi- + -iri", "hi- . . .   -iri"]]
     }
     {:label "burunge-VImprtvComponentAnalysis"
     :note "Kiessling1994 # 7.2.16"
@@ -2507,42 +2507,42 @@
     :common {:morpheme :SELECTORSUBJOBJTENSE,
 	    :pos :Selector,
 	    :morphClass :Subj_obj_tense}
-    :terms [[:token, :token-selCat1, :token-selCat2, :token-selCat3, :token-selForm1, :token-selForm2, :token-selForm3]  ;; schema
-	    ["haa", "ParticipantSubj", "Future1", "Common", "ha", "aa", "Common"],
-	    ["háa", "ParticipantSubj", "Preterite", "Common", "ha", "áa", "Common"],
-	    ["hoo", "ParticipantSubj", "Prospective", "Common", "ha", "oo", "Common"],
-	    ["hóo", "ParticipantSubj", "Habitual", "Common", "ha", "óo", "Common"],
-	    ["yaa", "ReferentSubj", "Future1", "Common", "hi", "aa", "Common"],
-	    ["yáa", "ReferentSubj", "Preterite", "Common", "hi", "áa", "Common"],
-	    ["yoo", "ReferentSubj", "Prospective", "Common", "hi", "oo", "Common"],
-	    ["yóo", "ReferentSubj", "Habitual", "Common", "hi", "óo", "Common"],
-	    ["hagiyaa", "ParticipantSubj", "Object2SingluarFem_3Plural", "Future1", "ha", "gi", "aa"],
-	    ["_NULL", "~ hagaa", "", "", "", "", ""],
-	    ["hagiyáa", "ParticipantSubj", "Object2SingluarFem_3Plural", "Preterite", "ha", "gi", "áa"],
-	    ["_NULL", "~ hagáa", "", "", "", "", ""],
-	    ["hagiyoo", "ParticipantSubj", "Object2SingluarFem_3Plural", "Prospective", "ha", "gi", "oo"],
-	    ["_NULL", "~ hagoo", "", "", "", "", ""],
-	    ["hagiyóo", "ParticipantSubj", "Object2SingluarFem_3Plural", "Habitual", "ha", "gi", "óo"],
-	    ["_NULL", "~ hagóo", "", "", "", "", ""],
-	    ["hanaa", "ParticipantSubj", "Object1Singular", "Future1", "ha", "ni", "aa"],
-	    ["handáa", "ParticipantSubj", "Object1Plural", "Preterite", "ha", "ndi", "áa"],
-	    ["hanoo", "ParticipantSubj", "Object1Singular", "Prospective", "ha", "ni", "oo"],
-	    ["handóo", "ParticipantSubj", "Object1Plural", "Habitual", "ha", "ndi", "óo"],
-	    ["hagoo", "ParticipantSubj", "Object2SingularFem]", "Prospective", "ha", "gi", "oo"],
-	    ["hagoo", "ParticipantSubj", "Object3SingularFem", "Prospective", "ha", "ga", "oo"],
-	    ["hagoo", "ParticipantSubj", "Object3Plural", "Prospective", "ha", "gi", "oo"],
-	    ["hagwaa", "ParticipantSubj", "Object2SingularMasd_3SingularMasc", "Future1", "ha", "gu", "aa"],
-	    ["hagwáa", "ParticipantSubj", "Object2SingularMasd_3SingularMasc", "Preterite", "ha", "gu", "áa"],
-	    ["hagwaa", "ParticipantSubj", "Object2Plural", "Future1", "ha", "ngu", "aa"],
-	    ["hagwáa", "ParticipantSubj", "Object2Plural", "Preterite", "ha", "ngu", "áa"],
-	    ["hagoo", "ParticipantSubj", "Object2SingularMasd_3SingularMasc", "Prospective", "ha", "gu", "oo"],
-	    ["hagóo", "ParticipantSubj", "Object2SingularMasd_3SingularMasc", "Habitual", "ha", "gu", "óo"],
-	    ["hagoo", "ParticipantSubj", "Object2Plural", "Prospective", "ha", "ngu", "oo"],
-	    ["hagóo", "ReferentSubj", "Object2Plural", "Habitual", "ha", "ngu", "óo"],
-	    ["hugu", "ReferentSubj", "Object2SingularMasc", "Common", "hi", "gu", "Common"],
-	    ["hungu", "ReferentSubj", "Object2Plural", "Common", "hi", "ngu", "Common"],
-	    ["higu", "ReferentSubj", "Object3SingularMasc", "Common", "hi", "gu", "Common"],
-	    ["higa", "ReferentSubj", "Object3SingularFem", "Common", "hi", "ga", "Common"]]
+    :terms [[:token, :token-note-selCats]  ;; schema
+	    ["haa", "ParticipantSubj + Future1 + Common + ha + aa + Common"],
+	    ["háa", "ParticipantSubj + Preterite + Common + ha + áa + Common"],
+	    ["hoo", "ParticipantSubj + Prospective + Common + ha + oo + Common"],
+	    ["hóo", "ParticipantSubj + Habitual + Common + ha + óo + Common"],
+	    ["yaa", "ReferentSubj + Future1 + Common + hi + aa + Common"],
+	    ["yáa", "ReferentSubj + Preterite + Common + hi + áa + Common"],
+	    ["yoo", "ReferentSubj + Prospective + Common + hi + oo + Common"],
+	    ["yóo", "ReferentSubj + Habitual + Common + hi + óo + Common"],
+	    ["hagiyaa", "ParticipantSubj + Object2SingluarFem_3Plural + Future1 + ha + gi + aa"],
+	    ["_NULL", "~ hagaa +  +  +  +  + "],
+	    ["hagiyáa", "ParticipantSubj + Object2SingluarFem_3Plural + Preterite + ha + gi + áa"],
+	    ["_NULL", "~ hagáa +  +  +  +  + "],
+	    ["hagiyoo", "ParticipantSubj + Object2SingluarFem_3Plural + Prospective + ha + gi + oo"],
+	    ["_NULL", "~ hagoo +  +  +  +  + "],
+	    ["hagiyóo", "ParticipantSubj + Object2SingluarFem_3Plural + Habitual + ha + gi + óo"],
+	    ["_NULL", "~ hagóo +  +  +  +  + "],
+	    ["hanaa", "ParticipantSubj + Object1Singular + Future1 + ha + ni + aa"],
+	    ["handáa", "ParticipantSubj + Object1Plural + Preterite + ha + ndi + áa"],
+	    ["hanoo", "ParticipantSubj + Object1Singular + Prospective + ha + ni + oo"],
+	    ["handóo", "ParticipantSubj + Object1Plural + Habitual + ha + ndi + óo"],
+	    ["hagoo", "ParticipantSubj + Object2SingularFem] + Prospective + ha + gi + oo"],
+	    ["hagoo", "ParticipantSubj + Object3SingularFem + Prospective + ha + ga + oo"],
+	    ["hagoo", "ParticipantSubj + Object3Plural + Prospective + ha + gi + oo"],
+	    ["hagwaa", "ParticipantSubj + Object2SingularMasd_3SingularMasc + Future1 + ha + gu + aa"],
+	    ["hagwáa", "ParticipantSubj + Object2SingularMasd_3SingularMasc + Preterite + ha + gu + áa"],
+	    ["hagwaa", "ParticipantSubj + Object2Plural + Future1 + ha + ngu + aa"],
+	    ["hagwáa", "ParticipantSubj + Object2Plural + Preterite + ha + ngu + áa"],
+	    ["hagoo", "ParticipantSubj + Object2SingularMasd_3SingularMasc + Prospective + ha + gu + oo"],
+	    ["hagóo", "ParticipantSubj + Object2SingularMasd_3SingularMasc + Habitual + ha + gu + óo"],
+	    ["hagoo", "ParticipantSubj + Object2Plural + Prospective + ha + ngu + oo"],
+	    ["hagóo", "ReferentSubj + Object2Plural + Habitual + ha + ngu + óo"],
+	    ["hugu", "ReferentSubj + Object2SingularMasc + Common + hi + gu + Common"],
+	    ["hungu", "ReferentSubj + Object2Plural + Common + hi + ngu + Common"],
+	    ["higu", "ReferentSubj + Object3SingularMasc + Common + hi + gu + Common"],
+	    ["higa", "ReferentSubj + Object3SingularFem + Common + hi + ga + Common"]]
     }
     {:label "burunge-PRefSwitch"
     :note "Kiessling1994 5.6.1.1 Fem. poss anaphoric pronoun is grammaticized,in conjunction
@@ -2789,14 +2789,7 @@
 	    [:Prospective, "da + oo → doo"]]
     }
     {:label "burunge-VDervStem"
-    :note "Kiessling1994 6.3 (pp. 93-109). Derived stem template:comitative - applicative -
-            frequentative - ROOT - distributive - {progressive,intensive}- inchoative - durative -
-            {mediopassive,continuative}- causative. The plural root (suppletive in a number of
-            verbs) is often formed with a derived stem
-            (frequentative,continuative,durative,progressivew,or intensive - cf. section 6.5.2,pp.
-            113 - 119. [The exclamation sign !is used by Kiessling as a morphophonemic indicator of
-            (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing.
-            Cf. 4.1.11 (pp. 43f)]"
+    :note "Kiessling1994 6.3 (pp. 93-109). Derived stem template:comitative - applicative - frequentative - ROOT - distributive - {progressive,intensive}- inchoative - durative - {mediopassive,continuative}- causative. The plural root (suppletive in a number of verbs) is often formed with a derived stem (frequentative,continuative,durative,progressivew,or intensive - cf. section 6.5.2,pp. 113 - 119. [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]"
     :common {:morpheme :DERVSTEMSUFF,
 	    :pos :Verb,
 	    :morphClass :DervStem}
