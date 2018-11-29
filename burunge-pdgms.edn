@@ -5,8 +5,7 @@
  :datasource "Kiessling1994"
  :geodemoURL "http://www.ethnologue.com/language/bds"
  :geodemoTXT "Varieties and subdialects of Burunge are spoken in Tanzania, 'Dodoma region: Kondoa district, southeast of Langi [lag] language area, Goima, Chambalo, and Mirambu villages; Manyara region'."
- :schemata {:lexeme [:dah  :doosl :dosl :gu :hom :ibiid :kaah :kiis :koom :qaat :qaat-alt :qadid :waar :xaw :ʔar],
- :case [:Ablative :Allative],
+ :schemata { :case [:Ablative :Allative],
  :caseSel [:CommitInstrumental],
  :clauseTypeSel [:Concessive :Conditional :Consecutive :ObjFocus :ObliqueRelative :Optative :Relative :Sequential :SubjFocus :SubjRel],
  :deixis [:Far :Near],
@@ -43,27 +42,29 @@
           :synsemClass [:clauseTypeSel :case :deixis :derivedStem :gramFunction :imprtvComponent :orientation :polarity :pos :predType :proClass :reference :selectorCategory :selectorFormant :stemInflCategory :stemInflMorpheme :subjSel :tenseSel :type :tam],
           :inflClass [:stemClass :nounClass],
           :otherClass []}
- :lexemes{:qaat {:lemma "qaat-", :gloss "lie"},
-          :ʔar-1 {:lemma "ʔar-", :gloss "see"},
-          :hiiliħ {:lemma "hiiliħ-", :gloss "throw", :derivedStem :Applicative, :pos :Verb},
-          :koom {:lemma "koom-", :gloss "have"},
-          :hom {:lemma "hom-", :gloss "cook"},
-          :waar {:lemma "waar-", :gloss "beinaplace"},
-          :agaad {:lemma "ɬagaaduusay", :gloss "hunter"},
-          :kiis {:lemma "kiʕis-", :gloss "giveback"},
-          :ʔar {:lemma "ʔar-", :gloss "see"},
-          :hiitlaw {:lemma "hiitlaw-", :gloss "wake up", :derivedStem :Applicative, :pos :Verb},
-          :dah {:lemma "dah-", :gloss "arrive"},
-          :ibiid {:lemma "ibiid-", :gloss "sit"},
-          :gu {:lemma "gu'-", :gloss "sleep"},
-          :qadid {:lemma "qadid-", :gloss "Stand"},
-          :doosl {:lemma "dooɬ-", :gloss "Cultivate"},
-          :xaw {:lemma "xaw-", :gloss "come"},
-          :qaat-alt {:gloss "[x]", :lemma "[y]"},
-          :kaah {:lemma "kaah-", :gloss "say"},
-          :ħoʔi {:lemma "ħoʔi", :gloss "good"},
-          :dosl {:gloss "[x]", :lemma "[y]"},
-          :hiičaʕ {:derivedStem :Applicative, :pos :Verb}}
+ :lexemes {
+:agaad   {:pos :Noun, :lemma "ɬagaaduusay", :gloss "hunter", },
+:dah   {:pos :Verb, :lemma "dah-", :gloss "arrive", },
+:doosl   {:pos :Verb, :lemma "dooɬ-", :gloss "Cultivate", },
+:dosl   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:gu   {:pos :Verb, :lemma "gu'-", :gloss "sleep", },
+:hiiliħ   {:pos :Verb, :lemma "hiiliħ-", :gloss "throw", :derivedStem :Applicative},
+:hiitlaw   {:pos :Verb, :lemma "hiitlaw-", :gloss "wake up", :derivedStem :Applicative},
+:hiičaʕ   {:pos :Verb, :lemma "[y]", :gloss "[x]", :derivedStem :Applicative},
+:hom   {:pos :Verb, :lemma "hom-", :gloss "cook", },
+:ibiid   {:pos :Verb, :lemma "ibiid-", :gloss "sit", },
+:kaah   {:pos :Verb, :lemma "kaah-", :gloss "say", },
+:kiis   {:pos :Verb, :lemma "kiʕis-", :gloss "giveback", },
+:koom   {:pos :Verb, :lemma "koom-", :gloss "have", },
+:qaat   {:pos :Verb, :lemma "qaat-", :gloss "lie", },
+:qaat-alt   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:qadid   {:pos :Verb, :lemma "qadid-", :gloss "Stand", },
+:waar   {:pos :Verb, :lemma "waar-", :gloss "be in a place", },
+:xaw   {:pos :Verb, :lemma "xaw-", :gloss "come", },
+:ħoʔi   {:pos :Verb, :lemma "ħoʔi", :gloss "good", },
+:ʔar   {:pos :Verb, :lemma "ʔar-", :gloss "see", },
+:ʔar-1   {:pos :Verb, :lemma "ʔar-", :gloss "see", },
+}
  :termclusters [
                 {:label "burunge-VImperfNasalStem-hom"
                  :note "Kiessling1994 #7.1.1.2.4"
@@ -1528,25 +1529,25 @@
                          [:Vent "-an"] ]
                  }
                 {:label "burunge-VImprtvObjSuff"
-                 :note "Kiessling1994 #7.2.16"
+                 :note "Kiessling1994 #7.2.16 [REV: insert :number(subj)]"
                  :common {:pos :Verb, 
                           :vmorphClass :ImperativeObject3, 
                           :prsObj :PObj3, 
                           :person :Person2, 
                           :tam :Imperative}
-                 :terms [[:orientation :token] ;; schema
-                         [:NonVentive "-eki"]
-                         [:NonVentive "-eku"]
-                         [:NonVentive "-eka"]
-                         [:NonVentive "-akina"]
-                         [:NonVentive "-akuna"]
-                         [:NonVentive "-akana"]
-                         [:Ventive "-anki"]
-                         [:Ventive "-anku"]
-                         [:Ventive "-anka"]
-                         [:Ventive "-ankina"]
-                         [:Ventive "-ankuna"]
-                         [:Ventive "-ankana"] ]
+                 :terms [[:orientation   :gndObj :number  :token] ;; schema
+                         [:NonVentive :Neut :Singular "-eki"]
+                         [:NonVentive :Masc :Singular "-eku"]
+                         [:NonVentive :Fem  :Singular "-eka"]
+                         [:NonVentive :Neut :Plural "-akina"]
+                         [:NonVentive :Masc :Plural "-akuna"]
+                         [:NonVentive :Fem :Plural "-akana"]
+                         [:Ventive :Neut :Singular "-anki"]
+                         [:Ventive :Masc :Singular "-anku"]
+                         [:Ventive :Fem :Singular "-anka"]
+                         [:Ventive :Neut :Plural "-ankina"]
+                         [:Ventive :Masc :Plural "-ankuna"]
+                         [:Ventive :Fem :Plural "-ankana"] ]
                  }
                 {:label "burunge-VImprtvSuffixes"
                  :note "Kiessling1994 # 7.2.16. In the imprtv,applicative verbs do not have the prefix hil-,but suffix a kind of protemanteau morpheme. [Object indication not possible.]"
@@ -1562,25 +1563,25 @@
                          [:Singular :Ventive "-aayu"] ]
                  }
                 {:label "burunge-VImprtvWithObj-kiis"
-                 :note "Kiessling1994, 7.2.16, p. 179. [REV: :orientation :number :genNumObj]"
-                 :common {:lexeme :kiis
+                 :note "Kiessling1994, 7.2.16, p. 179. [REV: insert :number (subj)]"
+                 :common {:lexeme :kiis                
                           :person :Person2,
                           :pos :Verb,
                           :vmorphClass :ImperativeWithObj
                           :tam :Imperative}
-                 :terms [[:orientation :gndObj :token]
-                         [:NonVentive :Neut "kiʕisakină"]
-                         [:NonVentive :Neut "kiʕisekĭ"]
-                         [:NonVentive :Masc "kiʕisakună"]
-                         [:NonVentive :Masc "kiʕisekŭ"]
-                         [:NonVentive :Fem "kiʕisekă"]
-                         [:NonVentive :Fem "kiʕisakană"]
-                         [:Ventive :Neut "kiʕisankină"]
-                         [:Ventive :Neut "kiʕisankĭ"]
-                         [:Ventive :Masc "kiʕisankŭ"]
-                         [:Ventive :Masc "kiʕisankună"]
-                         [:Ventive :Fem "kiʕisankă"]
-                         [:Ventive :Fem "kiʕisankună"]]
+                 :terms [[:orientation :gndObj :number :token]
+                         [:NonVentive :Neut :Plural "kiʕisakină"]
+                         [:NonVentive :Neut :Singular "kiʕisekĭ"]
+                         [:NonVentive :Masc :Plural "kiʕisakună"]
+                         [:NonVentive :Masc :Singular "kiʕisekŭ"]
+                         [:NonVentive :Fem :Singular "kiʕisekă"]
+                         [:NonVentive :Fem :Plural "kiʕisakană"]
+                         [:Ventive :Neut :Plural "kiʕisankină"]
+                         [:Ventive :Neut :Singular "kiʕisankĭ"]
+                         [:Ventive :Masc :Singular "kiʕisankŭ"]
+                         [:Ventive :Masc :Plural "kiʕisankună"]
+                         [:Ventive :Fem :Singular "kiʕisankă"]
+                         [:Ventive :Fem :Plural "kiʕisankună"]]
                  }
                 {:label "burunge-VNegProhibitativeNegSubjunctive"
                  :note "Kiessling1994 # 9.5.2. Der Prohibitiv. The prohibitive functions as the negation
@@ -2204,7 +2205,7 @@
                     [:Prospective :P3Subj :NA :NA :NA "hi+oo > yoo"]]
             }
            {:label "burunge-SelPretSubjObj"
-            :note "Kiessling1994 # 7.2.3.2 [REV: :subjSel :nmbObj :prsObj :gndObj]"
+            :note "Kiessling1994 # 7.2.5.2 [REV: :subjSel :nmbObj :prsObj :gndObj]"
             :common {:pos :Verb
                      :vmorphClass :Selector,
                      :tenseSel :Preterite
@@ -2822,7 +2823,7 @@
                     [:Masc :Plural :Person2 :Common "gungu"]
                     [:Masc :Plural :Person3 :Common "gugi"]]
             }
-           {:label "burunge-SelSubjRelTenseGender"
+           {:label  "burunge-SelSubjRelTenseGender"
             :note "Kiessling1994 # 9.7.1.1. Subject relative clause. (Head noun subject of
             relative.) Verb occurs In participial form (perf or imperf) – similar to relative
             clauses of ECush (cf. Somali). Sel formants are attahced to genderMarked
