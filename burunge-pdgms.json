@@ -1,11 +1,25 @@
 {
   "lang": "burunge",
-  "subfamily": "Cushitic South Rift",
+  "subfamily": "cushitic south rift",
   "lgpref": "brn",
   "datasource": "Kiessling, Roland. 1994. Eine Grammatik des Burunge. Arikanistische Forschungen 13. Hamburg: Research and Progress Verlag [K94]",
-  "datasourceNotes": "",
+  "datasourceNotes": {
+    "1": "Note transcription of voiceless vowels with V-breve: ă, ĭ, ŭ.",
+    "2": "Compound grammatical properties, particularly in the 'selector' category: 'caseSel', 'clauseType', 'clauseTypeSel', 'gramFunction', 'imprtvComponent', 'personMarkerType', 'polarity', 'predType', 'selClass', 'stemInflCategory', 'stemInflMorpheme'."
+  },
+  "transcription": { 
+    "Consonants": {
+      "general": "forms given here according to CC table, [RK94p.15]; paradigms in text rendered using a transcription modeled on the 'Iraqw Alphabet' [RK94p29]",
+      "note": [
+        "'' = ''",
+        "'' = '' "
+      ]},
+    "Vowels": {
+      "Inventory": "short: i e a o u; long: ii ee aa oo uu; voiceless:  ĭ, ă, ŭ"},
+    "Prosody": {
+      "Tone": "'à' low; 'a' mid;'á`'high; ('â' falling)"}},  
   "geodemoURL": "http://www.ethnologue.com/language/bds",
-  "geodemoTXT": "Varieties and subdialects of Burunge are spoken in Tanzania, ZZDodoma region: Kondoa district, southeast of Langi [lag] language area, Goima, Chambalo, and Mirambu villages; Manyara regionZZ.",
+  "geodemoTXT": "Varieties and subdialects of Burunge are spoken in Tanzania, Dodoma region: Kondoa district, southeast of Langi [lag] language area, Goima, Chambalo, and Mirambu villages; Manyara region.",
   "schemata": {
   "case": [
     "Ablative",
@@ -17,6 +31,8 @@
   "clauseType": [
     "Conditional",
     "Consecutive",
+    "Declarative",
+    "Interrogative",
     "ObjFocus",
     "ObliqueRelative",
     "Optative",
@@ -69,8 +85,8 @@
     "Common",
     "Fem",
     "Masc",
-    "NA",
-    "Neut"
+    "Neut",
+    "_NA"
   ],
   "gramFunction": [
     "AdjSuffF",
@@ -114,6 +130,9 @@
     "xaw",
     "ʔar"
   ],
+  "mType": [
+    "Structure"
+  ],
   "mood": [
     "Hypothetical",
     "NegSubjunctive"
@@ -127,6 +146,7 @@
     "ImperativeWithObj",
     "InterrGen",
     "ParticipleSuff",
+    "SubjAgr",
     "SubjMarkerSelStem",
     "SubjSuffAllomorph",
     "SubjSuffDentStemImperf",
@@ -136,21 +156,20 @@
     "SubjSuffHStemPerf",
     "SubjSuffNasStemImperf",
     "SubjSuffNasStemPerf",
-    "VerbStemStructure",
+    "VerbStemStructure1",
     "VerbVsAdjNeg",
     "VerbalnounNeg"
   ],
   "nmbObj": [
-    "NA",
     "NumCObj",
     "Plural",
-    "Singular"
+    "Singular",
+    "_NA"
   ],
   "nounClass": [
     "Numerals"
   ],
   "number": [
-    "Common",
     "Plural",
     "Singular"
   ],
@@ -161,22 +180,15 @@
     "Ventive"
   ],
   "person": [
-    "Common",
     "Person1",
     "Person2",
     "Person3"
   ],
-  "personMarkerType": [
-    "ObjAgr",
-    "PossSuffBase",
-    "ProInd",
-    "SubjAgr",
-    "VerbSuff"
-  ],
   "polarity": [
     "AffDecl",
-    "AffInterr",
     "Affirmative",
+    "Declarative",
+    "Interrogative",
     "NegDecl",
     "NegInterr",
     "Negative"
@@ -189,26 +201,24 @@
   ],
   "predType": [
     "Adjectival",
-    "AffDecl",
-    "AffInterr",
     "Verbal"
   ],
   "proClass": [
     "Deictic",
     "DeicticAnaph",
     "Independent",
-    "PersMarkersGeneral",
-    "PossAnaph",
+    "PossInd",
     "PossSuff",
+    "PossSuffix",
     "RefSwitch"
   ],
   "prsObj": [
-    "NA",
     "PObj3",
     "PRefl",
     "Person1",
     "Person2",
-    "Person3"
+    "Person3",
+    "_NA"
   ],
   "reference": [
     "NonSpatial",
@@ -221,23 +231,23 @@
     "Consecutive",
     "FiniteSel",
     "GenderTense",
+    "ObjAgr",
     "ObjectSel",
     "OrientationSel",
+    "Prospective",
+    "SubjAgr",
     "TenseSel",
     "TenseSubj",
     "TenseSubjObj",
     "subjSel"
   ],
-  "selass": [
-    "Prospective"
-  ],
   "stemClass": [
+    "BaseStem",
     "DentalStem",
     "GlideStem",
     "HStem",
     "Irreg",
-    "NasalStem",
-    "UnmrkStem"
+    "NasalStem"
   ],
   "stemInflCategory": [
     "AspectMood",
@@ -248,7 +258,6 @@
   ],
   "stemInflMorpheme": [
     "AffDecl",
-    "Common",
     "Imperfect",
     "InterrogDir",
     "InterrogRhet",
@@ -256,6 +265,11 @@
     "NumNonPerf",
     "NumPerf",
     "Perfect",
+    "Plural_Person1",
+    "Singular",
+    "Singular_Person1",
+    "Singular_Person2_or_Person3_Fem",
+    "Singular_Person3_Masc",
     "Subjunctive"
   ],
   "subjSel": [
@@ -278,85 +292,80 @@
     "Future1",
     "Future2",
     "Habitual",
-    "NA",
     "Present",
     "Preterite",
-    "Prospective"
+    "Prospective",
+    "_NA"
   ]
 },
   "lexemes": {
-  "dah": {
-    "pos": "Verb",
-    "lemma": "dah-",
-    "gloss": "arrive"
+    "dah": {
+      "pos": "Verb",
+      "lemma": "dah-",
+      "gloss": "arrive"
+    },
+    "doosl": {
+      "pos": "Verb",
+      "lemma": "dooɬ-",
+      "gloss": "Cultivate"
+    },
+    "gu": {
+      "pos": "Verb",
+      "lemma": "guZZ-",
+      "gloss": "sleep"
+    },
+    "hom": {
+      "pos": "Verb",
+      "lemma": "hom-",
+      "gloss": "cook"
+    },
+    "ibiid": {
+      "pos": "Verb",
+      "lemma": "ibiid-",
+      "gloss": "sit"
+    },
+    "kaah": {
+      "pos": "Verb",
+      "lemma": "kaah-",
+      "gloss": "say"
+    },
+    "kiis": {
+      "pos": "Verb",
+      "lemma": "kiʕis-",
+      "gloss": "giveback"
+    },
+    "koom": {
+      "pos": "Verb",
+      "lemma": "koom-",
+      "gloss": "have"
+    },
+    "qaat": {
+      "pos": "Verb",
+      "lemma": "qaat-",
+      "gloss": "lie"
+    },
+    "qadid": {
+      "pos": "Verb",
+      "lemma": "qadid-",
+      "gloss": "Stand"
+    },
+    "waar": {
+      "pos": "Verb",
+      "lemma": "waar-",
+      "gloss": "be in a place"
+    },
+    "xaw": {
+      "pos": "Verb",
+      "lemma": "xaw-",
+      "gloss": "come"
+    },
+    "ʔar": {
+      "pos": "Verb",
+      "lemma": "ʔar-",
+      "gloss": "see"
+    }
   },
-  "doosl": {
-    "pos": "Verb",
-    "lemma": "dooɬ-",
-    "gloss": "Cultivate"
-  },
-  "gu": {
-    "pos": "Verb",
-    "lemma": "guZZ-",
-    "gloss": "sleep"
-  },
-  "hom": {
-    "pos": "Verb",
-    "lemma": "hom-",
-    "gloss": "cook"
-  },
-  "ibiid": {
-    "pos": "Verb",
-    "lemma": "ibiid-",
-    "gloss": "sit"
-  },
-  "kaah": {
-    "pos": "Verb",
-    "lemma": "kaah-",
-    "gloss": "say"
-  },
-  "kiis": {
-    "pos": "Verb",
-    "lemma": "kiʕis-",
-    "gloss": "giveback"
-  },
-  "koom": {
-    "pos": "Verb",
-    "lemma": "koom-",
-    "gloss": "have"
-  },
-  "qaat": {
-    "pos": "Verb",
-    "lemma": "qaat-",
-    "gloss": "lie"
-  },
-  "qaat-alt": {
-    "pos": "Verb",
-    "lemma": "[y]",
-    "gloss": "[x]"
-  },
-  "qadid": {
-    "pos": "Verb",
-    "lemma": "qadid-",
-    "gloss": "Stand"
-  },
-  "waar": {
-    "pos": "Verb",
-    "lemma": "waar-",
-    "gloss": "be in a place"
-  },
-  "xaw": {
-    "pos": "Verb",
-    "lemma": "xaw-",
-    "gloss": "come"
-  },
-  "ʔar": {
-    "pos": "Verb",
-    "lemma": "ʔar-",
-    "gloss": "see"
-  }
-},
-  "pdgmPropOrder": ["pos", "proClass", "nounClass", "morphClass", "stemClass", "lexeme", "mood", "tam", "polarity"],
+  "pdgmPropOrder": ["pos", "proClass", "selClass", "nounClass", "morphClass", "stemClass", "lexeme", "mood", "tam", "polarity", "clauseType", "mType"],
   "termclusters": [
   {
     "label": "brn-NounNumerals",
@@ -366,25 +375,25 @@
       "pos": "Noun"
     },
     "terms": [
-      ["predType" ,"token"],
-      ["AffDecl" ,"cadă [2]"],
-      ["AffDecl" ,"tamĭ [3]"],
-      ["AffDecl" ,"cigaħă [4]"],
-      ["AffDecl" ,"koo’anĭ [5]"],
-      ["AffDecl" ,"laħo’ŭ [6]"],
-      ["AffDecl" ,"fanqŭ [7]"],
-      ["AffDecl" ,"dagatĭ [8]"],
-      ["AffDecl" ,"gwelelĭ [9]"],
-      ["AffDecl" ,"mibĭ [10]"],
-      ["AffInterr" ,"cada [2]"],
-      ["AffInterr" ,"tami [3]"],
-      ["AffInterr" ,"cigaħa [4]"],
-      ["AffInterr" ,"koo’ani [5]"],
-      ["AffInterr" ,"laħo’u [6]"],
-      ["AffInterr" ,"fanqu [7]"],
-      ["AffInterr" ,"dagati [8]"],
-      ["AffInterr" ,"gweleli [9]"],
-      ["AffInterr" ,"mibi [10]"]
+      ["clauseType" ,"token"],
+      ["Declarative" ,"cadă [2]"],
+      ["Declarative" ,"tamĭ [3]"],
+      ["Declarative" ,"cigaħă [4]"],
+      ["Declarative" ,"koo’anĭ [5]"],
+      ["Declarative" ,"laħo’ŭ [6]"],
+      ["Declarative" ,"fanqŭ [7]"],
+      ["Declarative" ,"dagatĭ [8]"],
+      ["Declarative" ,"gwelelĭ [9]"],
+      ["Declarative" ,"mibĭ [10]"],
+      ["Interrogative" ,"cada [2]"],
+      ["Interrogative" ,"tami [3]"],
+      ["Interrogative" ,"cigaħa [4]"],
+      ["Interrogative" ,"koo’ani [5]"],
+      ["Interrogative" ,"laħo’u [6]"],
+      ["Interrogative" ,"fanqu [7]"],
+      ["Interrogative" ,"dagati [8]"],
+      ["Interrogative" ,"gweleli [9]"],
+      ["Interrogative" ,"mibi [10]"]
     ]
   },
   {
@@ -395,15 +404,15 @@
       "proClass": "Deictic"
     },
     "terms": [
-      ["deixis" ,"polarity" ,"reference" ,"token"],
-      ["Far" ,"AffDecl" ,"NonSpatial" ,"-irĭ ~ -iră"],
-      ["Far" ,"AffDecl" ,"Spatial" ,"-a’ă"],
-      ["Far" ,"AffInterr" ,"NonSpatial" ,"-iri ~ -ira"],
-      ["Far" ,"AffInterr" ,"Spatial" ,"-a’a"],
-      ["Near" ,"AffDecl" ,"NonSpatial" ,"-ee"],
-      ["Near" ,"AffDecl" ,"Spatial" ,"⊤"],
-      ["Near" ,"AffInterr" ,"NonSpatial" ,"-ee"],
-      ["Near" ,"AffInterr" ,"Spatial" ,"-i"]
+      ["deixis" ,"clauseType" ,"reference" ,"token"],
+      ["Far" ,"Declarative" ,"NonSpatial" ,"-irĭ ~ -iră"],
+      ["Far" ,"Declarative" ,"Spatial" ,"-a’ă"],
+      ["Far" ,"Interrogative" ,"NonSpatial" ,"-iri ~ -ira"],
+      ["Far" ,"Interrogative" ,"Spatial" ,"-a’a"],
+      ["Near" ,"Declarative" ,"NonSpatial" ,"-ee"],
+      ["Near" ,"Declarative" ,"Spatial" ,"-ĭ"],
+      ["Near" ,"Interrogative" ,"NonSpatial" ,"-ee"],
+      ["Near" ,"Interrogative" ,"Spatial" ,"-i"]
     ]
   },
   {
@@ -431,7 +440,7 @@
   },
   {
     "label": "brn-PronounIndependent",
-    "note": "K94s5.6(p.86)",
+    "note": "K94s5.6(p.86) :: cf p. 86, contrasts person marking in Indepdent Pronoun, Subjet pvclitic, Object pv. clitic, verb subject, possessive suffix",
     "common": {
       "pos": "Pronoun",
       "proClass": "Independent"
@@ -448,62 +457,11 @@
     ]
   },
   {
-    "label": "brn-PronounPersMarkersGeneral",
-    "note": "K94s5.6(p.87) :: [A conflation of several person marker paradigms]",
-    "common": {
-      "pos": "Pronoun",
-      "proClass": "PersMarkersGeneral"
-    },
-    "terms": [
-      ["personMarkerType" ,"number" ,"person" ,"gender" ,"token"],
-      ["ObjAgr" ,"Singular" ,"Person1" ,"Common" ,"-ni-"],
-      ["ObjAgr" ,"Singular" ,"Person2" ,"Masc" ,"-gu-"],
-      ["ObjAgr" ,"Singular" ,"Person2" ,"Fem" ,"-gi-"],
-      ["ObjAgr" ,"Singular" ,"Person3" ,"Masc" ,"-gu-"],
-      ["ObjAgr" ,"Singular" ,"Person3" ,"Fem" ,"-ga-"],
-      ["ObjAgr" ,"Plural" ,"Person1" ,"Common" ,"-ndi-"],
-      ["ObjAgr" ,"Plural" ,"Person2" ,"Common" ,"-ngu-"],
-      ["ObjAgr" ,"Plural" ,"Person3" ,"Common" ,"-gi-"],
-      ["PossSuffBase" ,"Singular" ,"Person1" ,"Common" ,"-ay"],
-      ["PossSuffBase" ,"Singular" ,"Person2" ,"Masc" ,"-oogu"],
-      ["PossSuffBase" ,"Singular" ,"Person2" ,"Fem" ,"-oogi"],
-      ["PossSuffBase" ,"Singular" ,"Person3" ,"Masc" ,"-osi"],
-      ["PossSuffBase" ,"Singular" ,"Person3" ,"Fem" ,"-osi"],
-      ["PossSuffBase" ,"Plural" ,"Person1" ,"Common" ,"-oori"],
-      ["PossSuffBase" ,"Plural" ,"Person2" ,"Common" ,"-ooguna"],
-      ["PossSuffBase" ,"Plural" ,"Person3" ,"Common" ,"-oo’ina"],
-      ["ProInd" ,"Singular" ,"Person1" ,"Common" ,"‘ana"],
-      ["ProInd" ,"Singular" ,"Person2" ,"Masc" ,"‘ugu"],
-      ["ProInd" ,"Singular" ,"Person2" ,"Fem" ,"‘igi"],
-      ["ProInd" ,"Singular" ,"Person3" ,"Masc" ,"‘ina"],
-      ["ProInd" ,"Singular" ,"Person3" ,"Fem" ,"‘ina"],
-      ["ProInd" ,"Plural" ,"Person1" ,"Common" ,"dandiray ~ dandi ~ danday"],
-      ["ProInd" ,"Plural" ,"Person2" ,"Common" ,"‘unkuray"],
-      ["ProInd" ,"Plural" ,"Person3" ,"Common" ,"‘inay"],
-      ["SubjAgr" ,"Singular" ,"Person1" ,"Common" ,"ha-"],
-      ["SubjAgr" ,"Singular" ,"Person2" ,"Masc" ,"ha-"],
-      ["SubjAgr" ,"Singular" ,"Person2" ,"Fem" ,"ha-"],
-      ["SubjAgr" ,"Singular" ,"Person3" ,"Masc" ,"hi-"],
-      ["SubjAgr" ,"Singular" ,"Person3" ,"Fem" ,"hi-"],
-      ["SubjAgr" ,"Plural" ,"Person1" ,"Common" ,"ha-"],
-      ["SubjAgr" ,"Plural" ,"Person2" ,"Common" ,"ha-"],
-      ["SubjAgr" ,"Plural" ,"Person3" ,"Common" ,"hi-"],
-      ["VerbSuff" ,"Singular" ,"Person1" ,"Common" ,"_NULL, -u"],
-      ["VerbSuff" ,"Singular" ,"Person2" ,"Masc" ,"-id"],
-      ["VerbSuff" ,"Singular" ,"Person2" ,"Fem" ,"-id"],
-      ["VerbSuff" ,"Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["VerbSuff" ,"Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["VerbSuff" ,"Plural" ,"Person1" ,"Common" ,"-an"],
-      ["VerbSuff" ,"Plural" ,"Person2" ,"Common" ,"-id, -'i, -ri"],
-      ["VerbSuff" ,"Plural" ,"Person3" ,"Common" ,"-i, -'i, -ri"]
-    ]
-  },
-  {
-    "label": "brn-PronounPossAnaph",
+    "label": "brn-PronounPossInd",
     "note": "K94s5.6.1.1 ::  Die possessivische anaphorische Basis. [e.g.,(it is) mine,etc. (?)]",
     "common": {
       "pos": "Pronoun",
-      "proClass": "PossAnaph"
+      "proClass": "PossInd"
     },
     "terms": [
       ["genderHead" ,"number" ,"person" ,"gender" ,"token"],
@@ -538,21 +496,40 @@
       "proClass": "PossSuff"
     },
     "terms": [
-      ["polarity" ,"number" ,"person" ,"gender" ,"token"],
-      ["AffDecl" ,"Singular" ,"Person1" ,"Common" ,"-way ~ -oo’ĭ ~ -o’ĭ"],
-      ["AffDecl" ,"Singular" ,"Person2" ,"Masc" ,"-oogŭ"],
-      ["AffDecl" ,"Singular" ,"Person2" ,"Fem" ,"-oogĭ"],
-      ["AffDecl" ,"Singular" ,"Person3" ,"Common" ,"-osĭ"],
-      ["AffDecl" ,"Plural" ,"Person1" ,"Common" ,"-oorĭ"],
-      ["AffDecl" ,"Plural" ,"Person2" ,"Common" ,"-oogună"],
-      ["AffDecl" ,"Plural" ,"Person3" ,"Common" ,"-oo’ină"],
-      ["AffInterr" ,"Singular" ,"Person1" ,"Common" ,"-oo’I ~ -o’i"],
-      ["AffInterr" ,"Singular" ,"Person2" ,"Masc" ,"-oogu"],
-      ["AffInterr" ,"Singular" ,"Person2" ,"Fem" ,"-oogi"],
-      ["AffInterr" ,"Singular" ,"Person3" ,"Common" ,"-osi"],
-      ["AffInterr" ,"Plural" ,"Person1" ,"Common" ,"-oori"],
-      ["AffInterr" ,"Plural" ,"Person2" ,"Common" ,"-ooguna"],
-      ["AffInterr" ,"Plural" ,"Person3" ,"Common" ,"-oo’ina"]
+      ["clauseType" ,"number" ,"person" ,"gender" ,"token"],
+      ["Declarative" ,"Singular" ,"Person1" ,"Common" ,"-way ~ -oo’ĭ ~ -o’ĭ"],
+      ["Declarative" ,"Singular" ,"Person2" ,"Masc" ,"-oogŭ"],
+      ["Declarative" ,"Singular" ,"Person2" ,"Fem" ,"-oogĭ"],
+      ["Declarative" ,"Singular" ,"Person3" ,"Common" ,"-osĭ"],
+      ["Declarative" ,"Plural" ,"Person1" ,"Common" ,"-oorĭ"],
+      ["Declarative" ,"Plural" ,"Person2" ,"Common" ,"-oogună"],
+      ["Declarative" ,"Plural" ,"Person3" ,"Common" ,"-oo’ină"],
+      ["Interrogative" ,"Singular" ,"Person1" ,"Common" ,"-oo’I ~ -o’i"],
+      ["Interrogative" ,"Singular" ,"Person2" ,"Masc" ,"-oogu"],
+      ["Interrogative" ,"Singular" ,"Person2" ,"Fem" ,"-oogi"],
+      ["Interrogative" ,"Singular" ,"Person3" ,"Common" ,"-osi"],
+      ["Interrogative" ,"Plural" ,"Person1" ,"Common" ,"-oori"],
+      ["Interrogative" ,"Plural" ,"Person2" ,"Common" ,"-ooguna"],
+      ["Interrogative" ,"Plural" ,"Person3" ,"Common" ,"-oo’ina"]
+    ]
+  },
+  {
+    "label": "brn-PronounPossSuffix",
+    "note": "K94s5.6(p.87)",
+    "common": {
+      "pos": "Pronoun",
+      "proClass": "PossSuffix"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-ay"],
+      ["Singular" ,"Person2" ,"Masc" ,"-oogu"],
+      ["Singular" ,"Person2" ,"Fem" ,"-oogi"],
+      ["Singular" ,"Person3" ,"Masc" ,"-osi"],
+      ["Singular" ,"Person3" ,"Fem" ,"-osi"],
+      ["Plural" ,"Person1" ,"Common" ,"-oori"],
+      ["Plural" ,"Person2" ,"Common" ,"-ooguna"],
+      ["Plural" ,"Person3" ,"Common" ,"-oo’ina"]
     ]
   },
   {
@@ -582,153 +559,6 @@
   },
   {
     "label": "brn-Selector",
-    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
-    "common": {
-      "pos": "Selector",
-      "selClass": "CaseSel"
-    },
-    "terms": [
-      ["caseSel" ,"token"],
-      ["CommitInstrumental" ,"ri"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
-    "common": {
-      "pos": "Selector",
-      "selClass": "ClauseTypeSel"
-    },
-    "terms": [
-      ["clauseType" ,"token"],
-      ["Conditional" ,"bara"],
-      ["Consecutive" ,"ma"],
-      ["ObjFocus" ,"ni"],
-      ["ObliqueRelative" ,"ga"],
-      ["Optative" ,"la"],
-      ["Sequential" ,"gi"],
-      ["SubjFocus" ,"na"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
-    "common": {
-      "pos": "Selector",
-      "selClass": "ObjectSel"
-    },
-    "terms": [
-      ["nmbObj" ,"prsObj" ,"gndObj" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"ni"],
-      ["Singular" ,"Person2" ,"Masc" ,"gu"],
-      ["Singular" ,"Person2" ,"Fem" ,"gi"],
-      ["Singular" ,"Person3" ,"Masc" ,"gu"],
-      ["Singular" ,"Person3" ,"Fem" ,"ga"],
-      ["Plural" ,"Person1" ,"Common" ,"ndi"],
-      ["Plural" ,"Person2" ,"Common" ,"ngu"],
-      ["Plural" ,"Person3" ,"Common" ,"gi"],
-      ["NumCObj" ,"PRefl" ,"Common" ,"ngi"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
-    "common": {
-      "pos": "Selector",
-      "selClass": "OrientationSel"
-    },
-    "terms": [
-      ["orientation" ,"token"],
-      ["Reflexive" ,"ti"],
-      ["Separative" ,"ti"],
-      ["Ventive" ,"ni"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
-    "common": {
-      "pos": "Selector",
-      "selClass": "subjSel"
-    },
-    "terms": [
-      ["subjSel" ,"token"],
-      ["BenefactiveSubj" ,"sa"],
-      ["IndetSubj" ,"da"],
-      ["P1_2Subj" ,"ha"],
-      ["P3Subj" ,"hi"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
-    "common": {
-      "pos": "Selector",
-      "selClass": "TenseSel"
-    },
-    "terms": [
-      ["tenseSel" ,"token"],
-      ["Completive" ,"ng"],
-      ["Future1" ,"aa"],
-      ["Future2" ,"maa"],
-      ["Habitual" ,"óo"],
-      ["Present" ,"Ø"],
-      ["Preterite" ,"áa"],
-      ["Prospective" ,"oo"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7.1.3(pp.133-135) :: Sel vowel sequence resolutions.",
-    "common": {
-      "pos": "Selector",
-      "selClass": "TenseSubjObj"
-    },
-    "terms": [
-      ["tenseSel" ,"subjSel" ,"nmbObj" ,"prsObj" ,"gndObj" ,"token"],
-      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person1" ,"Common" ,"ha+ni+aa &gt; hanaa"],
-      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+aa &gt; hagwaa"],
-      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+aa &gt; hagiyaa~hagaa"],
-      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+aa &gt; hagwaa"],
-      ["Future1" ,"P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+aa &gt; hagwaa"],
-      ["Future1" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+aa &gt; hagiyaa~hagaa"],
-      ["Future1" ,"P1_2Subj" ,"NA" ,"NA" ,"NA" ,"ha+aa &gt; haa"],
-      ["Future1" ,"P3Subj" ,"NA" ,"NA" ,"NA" ,"hi+aa &gt; yaa"],
-      ["Habitual" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+óo &gt; hagóo"],
-      ["Habitual" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+óo &gt; hagiyóo~hagóo"],
-      ["Habitual" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+óo &gt; hagóo"],
-      ["Habitual" ,"P1_2Subj" ,"Plural" ,"Person1" ,"Common" ,"ha+ndi+óo &gt; handóo"],
-      ["Habitual" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+óo &gt; hagiyóo~hagóo"],
-      ["Habitual" ,"P1_2Subj" ,"NA" ,"NA" ,"NA" ,"ha+óo &gt; hóo"],
-      ["Habitual" ,"P3Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+óo &gt; hagóo"],
-      ["Habitual" ,"P3Subj" ,"NA" ,"NA" ,"NA" ,"hi+óo &gt; yóo"],
-      ["NA" ,"P3Subj" ,"Singular" ,"Person2" ,"Masc" ,"hi+gu &gt; hugu"],
-      ["NA" ,"P3Subj" ,"Singular" ,"Person3" ,"Masc" ,"hi+gu &gt; higu"],
-      ["NA" ,"P3Subj" ,"Singular" ,"Person3" ,"Fem" ,"hi+ga &gt; higa"],
-      ["NA" ,"P3Subj" ,"Plural" ,"Person2" ,"Common" ,"hi+ngu &gt; hungu"],
-      ["Preterite" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+áa &gt; hagwáa"],
-      ["Preterite" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+áa &gt; hagiyáa~hagáa"],
-      ["Preterite" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+áa &gt; hagwáa"],
-      ["Preterite" ,"P1_2Subj" ,"Plural" ,"Person1" ,"Common" ,"ha+ndi+áa &gt; handáa"],
-      ["Preterite" ,"P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+áa &gt; hagwáa"],
-      ["Preterite" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+áa &gt; hagiyáa~hagáa"],
-      ["Preterite" ,"P1_2Subj" ,"NA" ,"NA" ,"NA" ,"ha+áa &gt; háa"],
-      ["Preterite" ,"P3Subj" ,"NA" ,"NA" ,"NA" ,"hi+áa &gt; yáa"],
-      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person1" ,"Common" ,"ha+ni+oo &gt; hanoo"],
-      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+oo &gt; hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+oo &gt; hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+oo &gt; hagiyoo~hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+oo &gt; hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Fem" ,"ha+ga+oo &gt; hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+oo &gt; hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+oo &gt; hagiyoo~hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+oo &gt; hagoo"],
-      ["Prospective" ,"P1_2Subj" ,"NA" ,"NA" ,"NA" ,"ha+oo &gt; hoo"],
-      ["Prospective" ,"P3Subj" ,"NA" ,"NA" ,"NA" ,"hi+oo &gt; yoo"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
     "note": "K94s7.2.5.2 :: [REV: :subjSel :nmbObj :prsObj :gndObj]",
     "common": {
       "pos": "Selector",
@@ -752,58 +582,6 @@
       ["P3Subj" ,"Plural" ,"Person1" ,"Common" ,"hindáa"],
       ["P3Subj" ,"Plural" ,"Person2" ,"Common" ,"hungwáa"],
       ["P3Subj" ,"Plural" ,"Person3" ,"Common" ,"higáa ~ higiyáa"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7.2.5.5 ",
-    "common": {
-      "pos": "Selector",
-      "selass": "Prospective"
-    },
-    "terms": [
-      ["subjSel" ,"nmbObj" ,"prsObj" ,"gndObj" ,"token"],
-      ["P1_2Subj" ,"Singular" ,"Person1" ,"Common" ,"hanoo"],
-      ["P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"hagoo"],
-      ["P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"hagoo ~ hagiyoo"],
-      ["P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"hagoo"],
-      ["P1_2Subj" ,"Singular" ,"Person3" ,"Fem" ,"hagoo"],
-      ["P1_2Subj" ,"Plural" ,"Person1" ,"Common" ,"handoo"],
-      ["P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"haŋoo"],
-      ["P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"hagoo ~ hagiyoo"],
-      ["P3Subj" ,"Singular" ,"Person1" ,"Common" ,"hinoo"],
-      ["P3Subj" ,"Singular" ,"Person2" ,"Masc" ,"hugoo"],
-      ["P3Subj" ,"Singular" ,"Person2" ,"Fem" ,"higoo ~ higiyoo"],
-      ["P3Subj" ,"Singular" ,"Person3" ,"Masc" ,"higoo"],
-      ["P3Subj" ,"Singular" ,"Person3" ,"Fem" ,"higoo"],
-      ["P3Subj" ,"Plural" ,"Person1" ,"Common" ,"hindoo"],
-      ["P3Subj" ,"Plural" ,"Person2" ,"Common" ,"huŋoo"],
-      ["P3Subj" ,"Plural" ,"Person3" ,"Common" ,"higoo ~ higiyoo"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
-    "note": "K94s7.2.5(p.147) ::  [REV: :tenseSel :subjSel]",
-    "common": {
-      "pos": "Selector",
-      "selClass": "TenseSubj"
-    },
-    "terms": [
-      ["tenseSel" ,"subjSel" ,"token"],
-      ["Completive" ,"P1_2Subj" ,"hang"],
-      ["Completive" ,"P3Subj" ,"hing"],
-      ["Future1" ,"P1_2Subj" ,"haa"],
-      ["Future1" ,"P3Subj" ,"yaa"],
-      ["Future2" ,"P1_2Subj" ,"hamaa"],
-      ["Future2" ,"P3Subj" ,"himaa"],
-      ["Habitual" ,"P1_2Subj" ,"hóo"],
-      ["Habitual" ,"P3Subj" ,"yóo"],
-      ["Present" ,"P1_2Subj" ,"ha"],
-      ["Present" ,"P3Subj" ,"hi"],
-      ["Preterite" ,"P1_2Subj" ,"háa"],
-      ["Preterite" ,"P3Subj" ,"yáa"],
-      ["Prospective" ,"P1_2Subj" ,"hoo"],
-      ["Prospective" ,"P3Subj" ,"yoo"]
     ]
   },
   {
@@ -1147,23 +925,6 @@
   },
   {
     "label": "brn-Selector",
-    "note": "K94s7.2.7",
-    "common": {
-      "pos": "Selector",
-      "selClass": "CauseSubj"
-    },
-    "terms": [
-      ["clauseTypeSel" ,"subjSel" ,"token"],
-      ["Consecutive" ,"P1_2Subj" ,"ma + ha → ma"],
-      ["Consecutive" ,"P3Subj" ,"ma + hi → mi"],
-      ["ObliqueRelative" ,"P1_2Subj" ,"ga + ha → ga"],
-      ["ObliqueRelative" ,"P3Subj" ,"ga + hi → gi"],
-      ["Optative" ,"P1_2Subj" ,"la + ha → la"],
-      ["Optative" ,"P3Subj" ,"la + hi → li"]
-    ]
-  },
-  {
-    "label": "brn-Selector",
     "note": "K94s7.2.11 :: Der SubjTypeSelindefinit {da}.[REV: :nmbObj :prsObj :gndObj] ",
     "common": {
       "pos": "Selector",
@@ -1409,7 +1170,90 @@
     ]
   },
   {
-    "label": "brn-Selector",
+    "label": "brn-SelectorCaseSel",
+    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
+    "common": {
+      "pos": "Selector",
+      "selClass": "CaseSel"
+    },
+    "terms": [
+      ["caseSel" ,"token"],
+      ["CommitInstrumental" ,"ri"]
+    ]
+  },
+  {
+    "label": "brn-SelectorCauseSubj",
+    "note": "K94s7.2.7",
+    "common": {
+      "pos": "Selector",
+      "selClass": "CauseSubj"
+    },
+    "terms": [
+      ["clauseTypeSel" ,"subjSel" ,"token"],
+      ["Consecutive" ,"P1_2Subj" ,"ma + ha → ma"],
+      ["Consecutive" ,"P3Subj" ,"ma + hi → mi"],
+      ["ObliqueRelative" ,"P1_2Subj" ,"ga + ha → ga"],
+      ["ObliqueRelative" ,"P3Subj" ,"ga + hi → gi"],
+      ["Optative" ,"P1_2Subj" ,"la + ha → la"],
+      ["Optative" ,"P3Subj" ,"la + hi → li"]
+    ]
+  },
+  {
+    "label": "brn-SelectorClauseTypeSel",
+    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
+    "common": {
+      "pos": "Selector",
+      "selClass": "ClauseTypeSel"
+    },
+    "terms": [
+      ["clauseType" ,"token"],
+      ["Conditional" ,"bara"],
+      ["Consecutive" ,"ma"],
+      ["ObjFocus" ,"ni"],
+      ["ObliqueRelative" ,"ga"],
+      ["Optative" ,"la"],
+      ["Sequential" ,"gi"],
+      ["SubjFocus" ,"na"]
+    ]
+  },
+  {
+    "label": "brn-SelectorConsecutive-doosl-",
+    "note": "K94s7.2.7.3",
+    "common": {
+      "lexeme": "doosl",
+      "pos": "Selector",
+      "selClass": "Consecutive"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"tenseSel" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"Future1" ,"‘ana maa dooɬĭ"],
+      ["Singular" ,"Person1" ,"Common" ,"Future2" ,"‘ana mamaa dooɬĭ"],
+      ["Singular" ,"Person1" ,"Common" ,"Habitual" ,"‘ana móo dooɬĭ"],
+      ["Singular" ,"Person1" ,"Common" ,"Prospective" ,"‘ana moo dooɬĭ"]
+    ]
+  },
+  {
+    "label": "brn-SelectorFiniteSel-doosl-Subjunctive",
+    "note": "K94s7.2.6 :: Der Subjunktiv",
+    "common": {
+      "lexeme": "doosl",
+      "pos": "Selector",
+      "tam": "Subjunctive",
+      "selClass": "FiniteSel"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"‘ana dooɬe"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu dooɬide"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina dooɬiye"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina dooɬide"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray dooɬane"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray dooɬidee’ĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay dooɬiyee’ĭ"]
+    ]
+  },
+  {
+    "label": "brn-SelectorGenderTense",
     "note": "K94s9.7.1.1 :: Subject relative clause. (Head noun subject of relative.) Verb occurs In participial form (perf or imperf) – similar to relative clauses of ECush (cf. Somali). Sel formants are attahced to genderMarked subordinator:gu- masc.,da- fem.",
     "common": {
       "pos": "Selector",
@@ -1434,39 +1278,210 @@
     ]
   },
   {
-    "label": "brn-Selector-doosl-",
-    "note": "K94s7.2.7.3",
+    "label": "brn-SelectorObjAgr",
+    "note": "K94s5.6(p.87) :: [A conflation of several person marker paradigms]",
     "common": {
-      "lexeme": "doosl",
       "pos": "Selector",
-      "selClass": "Consecutive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"tenseSel" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"Future1" ,"‘ana maa dooɬĭ"],
-      ["Singular" ,"Person1" ,"Common" ,"Future2" ,"‘ana mamaa dooɬĭ"],
-      ["Singular" ,"Person1" ,"Common" ,"Habitual" ,"‘ana móo dooɬĭ"],
-      ["Singular" ,"Person1" ,"Common" ,"Prospective" ,"‘ana moo dooɬĭ"]
-    ]
-  },
-  {
-    "label": "brn-Selector-doosl-Subjunctive",
-    "note": "K94s7.2.6 :: Der Subjunktiv",
-    "common": {
-      "lexeme": "doosl",
-      "pos": "Selector",
-      "tam": "Subjunctive",
-      "selClass": "FiniteSel"
+      "selClass": "ObjAgr"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana dooɬe"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu dooɬide"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina dooɬiye"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina dooɬide"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray dooɬane"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray dooɬidee’ĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay dooɬiyee’ĭ"]
+      ["Singular" ,"Person1" ,"Common" ,"-ni-"],
+      ["Singular" ,"Person2" ,"Masc" ,"-gu-"],
+      ["Singular" ,"Person2" ,"Fem" ,"-gi-"],
+      ["Singular" ,"Person3" ,"Masc" ,"-gu-"],
+      ["Singular" ,"Person3" ,"Fem" ,"-ga-"],
+      ["Plural" ,"Person1" ,"Common" ,"-ndi-"],
+      ["Plural" ,"Person2" ,"Common" ,"-ngu-"],
+      ["Plural" ,"Person3" ,"Common" ,"-gi-"]
+    ]
+  },
+  {
+    "label": "brn-SelectorObjectSel",
+    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
+    "common": {
+      "pos": "Selector",
+      "selClass": "ObjectSel"
+    },
+    "terms": [
+      ["nmbObj" ,"prsObj" ,"gndObj" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"ni"],
+      ["Singular" ,"Person2" ,"Masc" ,"gu"],
+      ["Singular" ,"Person2" ,"Fem" ,"gi"],
+      ["Singular" ,"Person3" ,"Masc" ,"gu"],
+      ["Singular" ,"Person3" ,"Fem" ,"ga"],
+      ["Plural" ,"Person1" ,"Common" ,"ndi"],
+      ["Plural" ,"Person2" ,"Common" ,"ngu"],
+      ["Plural" ,"Person3" ,"Common" ,"gi"],
+      ["NumCObj" ,"PRefl" ,"Common" ,"ngi"]
+    ]
+  },
+  {
+    "label": "brn-SelectorOrientationSel",
+    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
+    "common": {
+      "pos": "Selector",
+      "selClass": "OrientationSel"
+    },
+    "terms": [
+      ["orientation" ,"token"],
+      ["Reflexive" ,"ti"],
+      ["Separative" ,"ti"],
+      ["Ventive" ,"ni"]
+    ]
+  },
+  {
+    "label": "brn-SelectorProspective",
+    "note": "K94s7.2.5.5 ",
+    "common": {
+      "pos": "Selector",
+      "selClass": "Prospective"
+    },
+    "terms": [
+      ["subjSel" ,"nmbObj" ,"prsObj" ,"gndObj" ,"token"],
+      ["P1_2Subj" ,"Singular" ,"Person1" ,"Common" ,"hanoo"],
+      ["P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"hagoo"],
+      ["P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"hagoo ~ hagiyoo"],
+      ["P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"hagoo"],
+      ["P1_2Subj" ,"Singular" ,"Person3" ,"Fem" ,"hagoo"],
+      ["P1_2Subj" ,"Plural" ,"Person1" ,"Common" ,"handoo"],
+      ["P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"haŋoo"],
+      ["P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"hagoo ~ hagiyoo"],
+      ["P3Subj" ,"Singular" ,"Person1" ,"Common" ,"hinoo"],
+      ["P3Subj" ,"Singular" ,"Person2" ,"Masc" ,"hugoo"],
+      ["P3Subj" ,"Singular" ,"Person2" ,"Fem" ,"higoo ~ higiyoo"],
+      ["P3Subj" ,"Singular" ,"Person3" ,"Masc" ,"higoo"],
+      ["P3Subj" ,"Singular" ,"Person3" ,"Fem" ,"higoo"],
+      ["P3Subj" ,"Plural" ,"Person1" ,"Common" ,"hindoo"],
+      ["P3Subj" ,"Plural" ,"Person2" ,"Common" ,"huŋoo"],
+      ["P3Subj" ,"Plural" ,"Person3" ,"Common" ,"higoo ~ higiyoo"]
+    ]
+  },
+  {
+    "label": "brn-SelectorSubjAgr",
+    "note": "K94s5.6(p.87) :: [A conflation of several person marker paradigms]",
+    "common": {
+      "pos": "Selector",
+      "selClass": "SubjAgr"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"ha-"],
+      ["Singular" ,"Person2" ,"Masc" ,"ha-"],
+      ["Singular" ,"Person2" ,"Fem" ,"ha-"],
+      ["Singular" ,"Person3" ,"Masc" ,"hi-"],
+      ["Singular" ,"Person3" ,"Fem" ,"hi-"],
+      ["Plural" ,"Person1" ,"Common" ,"ha-"],
+      ["Plural" ,"Person2" ,"Common" ,"ha-"],
+      ["Plural" ,"Person3" ,"Common" ,"hi-"]
+    ]
+  },
+  {
+    "label": "brn-SelectorTenseSel",
+    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
+    "common": {
+      "pos": "Selector",
+      "selClass": "TenseSel"
+    },
+    "terms": [
+      ["tenseSel" ,"token"],
+      ["Completive" ,"ng"],
+      ["Future1" ,"aa"],
+      ["Future2" ,"maa"],
+      ["Habitual" ,"óo"],
+      ["Present" ,"Ø"],
+      ["Preterite" ,"áa"],
+      ["Prospective" ,"oo"]
+    ]
+  },
+  {
+    "label": "brn-SelectorTenseSubj",
+    "note": "K94s7.2.5(p.147) ::  [REV: :tenseSel :subjSel]",
+    "common": {
+      "pos": "Selector",
+      "selClass": "TenseSubj"
+    },
+    "terms": [
+      ["tenseSel" ,"subjSel" ,"token"],
+      ["Completive" ,"P1_2Subj" ,"hang"],
+      ["Completive" ,"P3Subj" ,"hing"],
+      ["Future1" ,"P1_2Subj" ,"haa"],
+      ["Future1" ,"P3Subj" ,"yaa"],
+      ["Future2" ,"P1_2Subj" ,"hamaa"],
+      ["Future2" ,"P3Subj" ,"himaa"],
+      ["Habitual" ,"P1_2Subj" ,"hóo"],
+      ["Habitual" ,"P3Subj" ,"yóo"],
+      ["Present" ,"P1_2Subj" ,"ha"],
+      ["Present" ,"P3Subj" ,"hi"],
+      ["Preterite" ,"P1_2Subj" ,"háa"],
+      ["Preterite" ,"P3Subj" ,"yáa"],
+      ["Prospective" ,"P1_2Subj" ,"hoo"],
+      ["Prospective" ,"P3Subj" ,"yoo"]
+    ]
+  },
+  {
+    "label": "brn-SelectorTenseSubjObj",
+    "note": "K94s7.1.3(pp.133-135) :: Sel vowel sequence resolutions.",
+    "common": {
+      "pos": "Selector",
+      "selClass": "TenseSubjObj"
+    },
+    "terms": [
+      ["tenseSel" ,"subjSel" ,"nmbObj" ,"prsObj" ,"gndObj" ,"token"],
+      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person1" ,"Common" ,"ha+ni+aa > hanaa"],
+      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+aa > hagwaa"],
+      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+aa > hagiyaa~hagaa"],
+      ["Future1" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+aa > hagwaa"],
+      ["Future1" ,"P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+aa > hagwaa"],
+      ["Future1" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+aa > hagiyaa~hagaa"],
+      ["Future1" ,"P1_2Subj" ,"_NA" ,"_NA" ,"_NA" ,"ha+aa > haa"],
+      ["Future1" ,"P3Subj" ,"_NA" ,"_NA" ,"_NA" ,"hi+aa > yaa"],
+      ["Habitual" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+óo > hagóo"],
+      ["Habitual" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+óo > hagiyóo~hagóo"],
+      ["Habitual" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+óo > hagóo"],
+      ["Habitual" ,"P1_2Subj" ,"Plural" ,"Person1" ,"Common" ,"ha+ndi+óo > handóo"],
+      ["Habitual" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+óo > hagiyóo~hagóo"],
+      ["Habitual" ,"P1_2Subj" ,"_NA" ,"_NA" ,"_NA" ,"ha+óo > hóo"],
+      ["Habitual" ,"P3Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+óo > hagóo"],
+      ["Habitual" ,"P3Subj" ,"_NA" ,"_NA" ,"_NA" ,"hi+óo > yóo"],
+      ["_NA" ,"P3Subj" ,"Singular" ,"Person2" ,"Masc" ,"hi+gu > hugu"],
+      ["_NA" ,"P3Subj" ,"Singular" ,"Person3" ,"Masc" ,"hi+gu > higu"],
+      ["_NA" ,"P3Subj" ,"Singular" ,"Person3" ,"Fem" ,"hi+ga > higa"],
+      ["_NA" ,"P3Subj" ,"Plural" ,"Person2" ,"Common" ,"hi+ngu > hungu"],
+      ["Preterite" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+áa > hagwáa"],
+      ["Preterite" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+áa > hagiyáa~hagáa"],
+      ["Preterite" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+áa > hagwáa"],
+      ["Preterite" ,"P1_2Subj" ,"Plural" ,"Person1" ,"Common" ,"ha+ndi+áa > handáa"],
+      ["Preterite" ,"P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+áa > hagwáa"],
+      ["Preterite" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+áa > hagiyáa~hagáa"],
+      ["Preterite" ,"P1_2Subj" ,"_NA" ,"_NA" ,"_NA" ,"ha+áa > háa"],
+      ["Preterite" ,"P3Subj" ,"_NA" ,"_NA" ,"_NA" ,"hi+áa > yáa"],
+      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person1" ,"Common" ,"ha+ni+oo > hanoo"],
+      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Masc" ,"ha+gu+oo > hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+oo > hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person2" ,"Fem" ,"ha+gi+oo > hagiyoo~hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Masc" ,"ha+gu+oo > hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Singular" ,"Person3" ,"Fem" ,"ha+ga+oo > hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Plural" ,"Person2" ,"Common" ,"ha+ngu+oo > hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+oo > hagiyoo~hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"Plural" ,"Person3" ,"Common" ,"ha+gi+oo > hagoo"],
+      ["Prospective" ,"P1_2Subj" ,"_NA" ,"_NA" ,"_NA" ,"ha+oo > hoo"],
+      ["Prospective" ,"P3Subj" ,"_NA" ,"_NA" ,"_NA" ,"hi+oo > yoo"]
+    ]
+  },
+  {
+    "label": "brn-SelectorsubjSel",
+    "note": "K94s7(p.121) :: The preverbal selectorcomplex (Flexionskomplex) can contain morphemes from the following categories:clauseType - subjType - object - contrast - case - tenseAspect - sequential - actionOrientation",
+    "common": {
+      "pos": "Selector",
+      "selClass": "subjSel"
+    },
+    "terms": [
+      ["subjSel" ,"token"],
+      ["BenefactiveSubj" ,"sa"],
+      ["IndetSubj" ,"da"],
+      ["P1_2Subj" ,"ha"],
+      ["P3Subj" ,"hi"]
     ]
   },
   {
@@ -1632,660 +1647,504 @@
     ]
   },
   {
-    "label": "brn-Verb:morph-DervStemSuff:",
-    "note": "K94s6.3(pp.93-109) :: Derived stem template:comitative - applicative - frequentative - ROOT - distributive - {progressive,intensive}- inchoative - durative - {mediopassive,continuative}- causative :: The plural root (suppletive in a number of verbs) is often formed with a derived stem (frequentative,continuative,durative,progressivew,or intensive - cf. section 6.5.2,pp. 113 - 119 :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-doosl-ImperfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
-      "pos": "Verb",
-      "morphClass": "DervStemSuff"
-    },
-    "terms": [
-      ["derivedStem" ,"token"],
-      ["Applicative" ,"hii-"],
-      ["Causative" ,"-is"],
-      ["Comitative" ,""],
-      ["Continuative" ,"-id!"],
-      ["Distributive" ,"{CV}n [total reduplication]"],
-      ["Durative" ,"-[i]m"],
-      ["Frequentative" ,"CV- [first syllable reduplication]"],
-      ["Inchoative" ,"-aw"],
-      ["Intensive" ,"-aaC- [reduplication of rootFinal C]"],
-      ["Mediopassive" ,"-id!"],
-      ["Progressive" ,"-VVC- [reduplication of rootFinal syllable with vowel lengthening]"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-Imperfect",
-    "note": "K94s7.2.5.2 :: The imperf preterite needs a progressive durative stem.",
-    "common": {
-      "derivedStem": "ProgDur",
       "lexeme": "doosl",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Preterite",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana háa dooɬiiɬimă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu háa dooɬiiɬintă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina yáa dooɬiiɬină"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina yáa dooɬiiɬintă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray háa dooɬiiɬină"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray háa dooɬiiɬintay"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay yáa dooɬiiɬinay"]
+      ["Singular" ,"Person1" ,"Common" ,"dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬiyay"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-Imperfect",
-    "note": "K94s7.2.5.3 :: Das Kompletivmorphem :: Der imperfische Aspekt dagegen fordert wiederum den progressivischem Verbalstamm:",
+    "label": "brn-VerbBaseStem-doosl-ImperfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
-      "derivedStem": "ProgDur",
       "lexeme": "doosl",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Completive",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana hang dooɬiiɬimă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu hang dooɬiiɬintă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina hing dooɬiiɬină"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina hing dooɬiiɬintă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray hang dooɬiiɬină"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hang dooɬiiɬintay"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay hing dooɬiilinay"]
+      ["Singular" ,"Person1" ,"Common" ,"dooɬa"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬida"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬiya"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬida"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬana"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬida’i"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬiya’i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-ImperfectNegative",
-    "note": "K94s7.2.5.1",
+    "label": "brn-VerbBaseStem-doosl-ImperfectAffirmativeStructure",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "doosl",
-      "polarity": "Negative",
+      "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Present",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana ha dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu ha dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray ha dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray ha dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay dooɬiyay"]
+      ["Singular" ,"Person1" ,"Common" ,"dooɬ-Ø-a"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬ-id-a"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬ-i-a"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬ-id-a"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬ-an-a"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬ-id-a-i"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬ-i-a-i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-ImperfectNegative",
-    "note": "K94s7.2.5.4 :: Das Beispielparadigma fur den Habitual lautet:",
+    "label": "brn-VerbBaseStem-doosl-ImperfectNegative",
+    "note": "K94s7.1.1.2.7",
     "common": {
       "lexeme": "doosl",
       "polarity": "Negative",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Habitual",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana hóo dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu hóo dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina yóo dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina yóo dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray hóo dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hóo dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay yóo dooɬiyay"]
+      ["Singular" ,"Person1" ,"Common" ,"ha dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"ha dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"ha dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"ha dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬiyay"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-ImperfectNegative",
-    "note": "K94s7.2.5.5 :: Das Beispielparadigma fur den Prospektiv lautet:",
+    "label": "brn-VerbBaseStem-doosl-PerfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "doosl",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
+      "pos": "Verb",
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dooɬĭ"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬidĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬidĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬanĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬidirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬirĭ"]
+    ]
+  },
+  {
+    "label": "brn-VerbBaseStem-doosl-PerfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "doosl",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
+      "pos": "Verb",
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dooɬi"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬidi"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬi"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬidi"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬani"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬidiri"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬiri"]
+    ]
+  },
+  {
+    "label": "brn-VerbBaseStem-doosl-PerfectAffirmativeStructure",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "doosl",
+      "polarity": "Affirmative",
+      "mType": "Structure",
+      "pos": "Verb",
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dooɬ-Ø-i"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬ-id-i"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬ-i-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬ-id-i"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬ-an-i"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬ-id-i-ri"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬ-i-i-ri"]
+    ]
+  },
+  {
+    "label": "brn-VerbBaseStem-doosl-PerfectNegative",
+    "note": "K94s7.1.1.2.7",
     "common": {
       "lexeme": "doosl",
       "polarity": "Negative",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Prospective",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana hoo dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu hoo dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina yoo dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina yoo dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray hoo dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hoo dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay yoo dooɬiyay"]
+      ["Singular" ,"Person1" ,"Common" ,"háa dooɬĭ"],
+      ["Singular" ,"Person2" ,"Common" ,"háa dooɬidĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"yáa dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"yáa dooɬidĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"háa dooɬanĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"háa dooɬidirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"yáa dooɬirĭ"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-ImperfectNegative",
-    "note": "K94s7.2.5.6 :: Das Paradigma fur Futur 1 lautet:",
+    "label": "brn-VerbBaseStem-doosl-SubjunctiveAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "doosl",
-      "polarity": "Negative",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Future1",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana haa dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu haa dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina yaa dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina yaa dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray haa dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray haa dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay yaa dooɬiyay"]
+      ["Singular" ,"Person1" ,"Common" ,"dooɬe"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬide"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬiye"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬide"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬane"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬidee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬiyee’i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-ImperfectNegative",
-    "note": "K94s7.2.5.6",
+    "label": "brn-VerbBaseStem-doosl-SubjunctiveAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "doosl",
-      "polarity": "Negative",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
-      "tam": "Imperfect",
-      "tenseSel": "Future2",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana hamaa dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu hamaa dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina himaa dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina himaa dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray hamaa dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hamaa dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay himaa dooɬiyay"]
+      ["Singular" ,"Person1" ,"Common" ,"dooɬee"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬidee"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬiyee"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬidee"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬanee"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬidee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬiyee’i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-PerfectNegative",
-    "note": "K94s7.2.5.3 :: Das Kompletivmorphem perf",
+    "label": "brn-VerbBaseStem-doosl-SubjunctiveAffirmativeStructure",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "doosl",
+      "polarity": "Affirmative",
+      "mType": "Structure",
+      "pos": "Verb",
+      "stemClass": "BaseStem",
+      "tam": "Subjunctive"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dooɬ-Ø-ee"],
+      ["Singular" ,"Person2" ,"Common" ,"dooɬ-id-ee"],
+      ["Singular" ,"Person3" ,"Masc" ,"dooɬ-i-ee"],
+      ["Singular" ,"Person3" ,"Fem" ,"dooɬ-id-ee"],
+      ["Plural" ,"Person1" ,"Common" ,"dooɬ-an-ee"],
+      ["Plural" ,"Person2" ,"Common" ,"dooɬ-id-ee-i"],
+      ["Plural" ,"Person3" ,"Common" ,"dooɬ-i-ee-i"]
+    ]
+  },
+  {
+    "label": "brn-VerbBaseStem-gu-ImperfectNegative",
+    "note": "K94s7.1.1.2.7 :: [Assimilation of vowel of –id- after //]",
+    "common": {
+      "lexeme": "gu",
       "polarity": "Negative",
       "pos": "Verb",
-      "tam": "Perfect",
-      "tenseSel": "Completive",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana hang dooɬĭ"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu hang dooɬidĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina hing dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina hing dooɬidĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray hang dooɬanĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hang dooɬidirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"‘inay hing dooɬirĭ"]
+      ["Singular" ,"Person1" ,"Common" ,"ha gu’ă"],
+      ["Singular" ,"Person2" ,"Common" ,"ha gu’udă"],
+      ["Singular" ,"Person3" ,"Masc" ,"gu’"],
+      ["Singular" ,"Person3" ,"Fem" ,"gu’udă"],
+      ["Plural" ,"Person1" ,"Common" ,"ha gu’ună"],
+      ["Plural" ,"Person2" ,"Common" ,"ha gu’untay"],
+      ["Plural" ,"Person3" ,"Common" ,"gu’unay"]
     ]
   },
   {
-    "label": "brn-Verb:morph-FiniteSel:-doosl-PerfectNegative",
-    "note": "K94s7.2.5.2",
+    "label": "brn-VerbBaseStem-gu-PerfectNegative",
+    "note": "K94s7.1.1.2.7 :: [Assimilation of vowel of –id- after //]",
     "common": {
-      "lexeme": "doosl",
+      "lexeme": "gu",
       "polarity": "Negative",
       "pos": "Verb",
-      "tam": "Perfect",
-      "tenseSel": "Preterite",
-      "morphClass": "FiniteSel"
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"‘ana háa dooɬĭ"],
-      ["Singular" ,"Person2" ,"Common" ,"‘ugu háa dooɬidĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"‘ina yáa dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"‘ina yáa dooɬidĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"dandiray háa dooɬanĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"‘unkuray háa dooɬidirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"inay yáa dooɬiĭ"]
+      ["Singular" ,"Person1" ,"Common" ,"háa gu’ĭ"],
+      ["Singular" ,"Person2" ,"Common" ,"háa gu’udĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"yáa gu’ĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"yáa gu’udĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"háa gu’unĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"háa gu’untirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"yáa gu’unirĭ"]
     ]
   },
   {
-    "label": "brn-Verb:morph-ImperativeApplicative:Imperative",
-    "note": "K94s7.2.16 :: In the imprtv,applicative verbs do not have the prefix hil-,but suffix a kind of protemanteau morpheme. [Object indication not possible.]",
+    "label": "brn-VerbBaseStem-koom-ImperfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
-      "derivedStem": "Applicative",
-      "person": "Person2",
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
-      "tam": "Imperative",
-      "morphClass": "ImperativeApplicative"
-    },
-    "terms": [
-      ["number" ,"orientation" ,"token"],
-      ["Plural" ,"NonVentive" ,"-aw"],
-      ["Plural" ,"Ventive" ,"-aaru"],
-      ["Singular" ,"NonVentive" ,"-i"],
-      ["Singular" ,"Ventive" ,"-aayu"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-ImperativeCompAnalysis:Imperative",
-    "note": "K94s7.2.16(p.180) :: [An attempt to combine a subj/obj marker component in various classes of imperative -- other dimensional presentations possible (features for ventive, object gender).]",
-    "common": {
-      "pos": "Verb",
-      "tam": "Imperative",
-      "morphClass": "ImperativeCompAnalysis"
-    },
-    "terms": [
-      ["imprtvComponent" ,"token"],
-      ["Applicative" ,"-u"],
-      ["NonVent" ,"-i"],
-      ["NonVent" ,"-a"],
-      ["Obj3GenderF" ,"-a"],
-      ["Obj3GenderM" ,"-u"],
-      ["Obj3GenderN" ,"-i"],
-      ["Obj3Marker" ,"-k"],
-      ["SubjNumObj3" ,"-na"],
-      ["Vent" ,"-a"],
-      ["Vent" ,"-aari"],
-      ["Vent" ,"-an"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-ImperativeObject3:Imperative",
-    "note": "K94s7.2.16 :: [REV: insert :number(subj)]",
-    "common": {
-      "person": "Person2",
-      "pos": "Verb",
-      "prsObj": "PObj3",
-      "tam": "Imperative",
-      "morphClass": "ImperativeObject3"
-    },
-    "terms": [
-      ["orientation" ,"gndObj" ,"number" ,"token"],
-      ["NonVentive" ,"Neut" ,"Singular" ,"-eki"],
-      ["NonVentive" ,"Masc" ,"Singular" ,"-eku"],
-      ["NonVentive" ,"Fem" ,"Singular" ,"-eka"],
-      ["NonVentive" ,"Neut" ,"Plural" ,"-akina"],
-      ["NonVentive" ,"Masc" ,"Plural" ,"-akuna"],
-      ["NonVentive" ,"Fem" ,"Plural" ,"-akana"],
-      ["Ventive" ,"Neut" ,"Singular" ,"-anki"],
-      ["Ventive" ,"Masc" ,"Singular" ,"-anku"],
-      ["Ventive" ,"Fem" ,"Singular" ,"-anka"],
-      ["Ventive" ,"Neut" ,"Plural" ,"-ankina"],
-      ["Ventive" ,"Masc" ,"Plural" ,"-ankuna"],
-      ["Ventive" ,"Fem" ,"Plural" ,"-ankana"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-ImperativeWithObj:-kiis-Imperative",
-    "note": "K94s7.2.16(p.179) :: [REV: insert :number (subj)]",
-    "common": {
-      "lexeme": "kiis",
-      "person": "Person2",
-      "pos": "Verb",
-      "tam": "Imperative",
-      "morphClass": "ImperativeWithObj"
-    },
-    "terms": [
-      ["orientation" ,"gndObj" ,"number" ,"token"],
-      ["NonVentive" ,"Neut" ,"Plural" ,"kiʕisakină"],
-      ["NonVentive" ,"Neut" ,"Singular" ,"kiʕisekĭ"],
-      ["NonVentive" ,"Masc" ,"Plural" ,"kiʕisakună"],
-      ["NonVentive" ,"Masc" ,"Singular" ,"kiʕisekŭ"],
-      ["NonVentive" ,"Fem" ,"Singular" ,"kiʕisekă"],
-      ["NonVentive" ,"Fem" ,"Plural" ,"kiʕisakană"],
-      ["Ventive" ,"Neut" ,"Plural" ,"kiʕisankină"],
-      ["Ventive" ,"Neut" ,"Singular" ,"kiʕisankĭ"],
-      ["Ventive" ,"Masc" ,"Singular" ,"kiʕisankŭ"],
-      ["Ventive" ,"Masc" ,"Plural" ,"kiʕisankună"],
-      ["Ventive" ,"Fem" ,"Singular" ,"kiʕisankă"],
-      ["Ventive" ,"Fem" ,"Plural" ,"kiʕisankună"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-InterrGen:",
-    "note": "K94s9.6.1(p.213) :: Die Satzfrage. Comparative list of morphological markers in declarative (with final reduction) and interrogative (without final reduction). On p, 214 gives list of imperative endings to make point that since imperative interrogatives do not exist, imperatives always have final reduction. Cf. pdgms: ImperativeCompAnalysis, ImperativeObject3, ImperativeApplicative.",
-    "common": {
-      "pos": "Verb",
-      "morphClass": "InterrGen"
-    },
-    "terms": [
-      ["gramFunction" ,"polarity" ,"token"],
-      ["AdjSuffF" ,"AffDecl" ,"-i"],
-      ["AdjSuffF" ,"AffInterr" ,"-i"],
-      ["AdjSuffM" ,"AffDecl" ,"-u"],
-      ["AdjSuffM" ,"AffInterr" ,"-u"],
-      ["ImperfSuff" ,"AffDecl" ,"⊤"],
-      ["ImperfSuff" ,"AffInterr" ,"-a"],
-      ["NegSuff" ,"AffDecl" ,"-ba"],
-      ["NegSuff" ,"AffInterr" ,"-baɬi"],
-      ["NominalPred" ,"AffDecl" ,"⊤"],
-      ["NominalPred" ,"AffInterr" ,"-goo"],
-      ["ParticipleSuffImprfSg" ,"AffDecl" ,"-a"],
-      ["ParticipleSuffImprfSg" ,"AffInterr" ,"-aa"],
-      ["ParticipleSuffPerfF" ,"AffDecl" ,"-idĭ"],
-      ["ParticipleSuffPerfF" ,"AffInterr" ,"-idi"],
-      ["ParticipleSuffPerfM" ,"AffDecl" ,"-u"],
-      ["ParticipleSuffPerfM" ,"AffInterr" ,"-u"],
-      ["ParticipleSuffPerfPl" ,"AffDecl" ,"-ee’ĭ"],
-      ["ParticipleSuffPerfPl" ,"AffInterr" ,"-ee’i"],
-      ["PerfSuff" ,"AffDecl" ,"⊤"],
-      ["PerfSuff" ,"AffInterr" ,"-i"],
-      ["Subj3sgImperf" ,"AffDecl" ,"⊤"],
-      ["Subj3sgImperf" ,"AffInterr" ,"-iya"],
-      ["SubjPlImperf" ,"AffDecl" ,"-y"],
-      ["SubjPlImperf" ,"AffInterr" ,"-‘i"],
-      ["SubjPlPerf" ,"AffDecl" ,"-rĭ"],
-      ["SubjPlPerf" ,"AffInterr" ,"-ri"],
-      ["SubjunctiveSuff" ,"AffDecl" ,"-e"],
-      ["SubjunctiveSuff" ,"AffInterr" ,"-ee"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-ParticipleSuff:",
-    "note": "K94s7.3",
-    "common": {
-      "pos": "Verb",
-      "morphClass": "ParticipleSuff"
-    },
-    "terms": [
-      ["tam" ,"number" ,"gender" ,"token"],
-      ["Imperfect" ,"Singular" ,"Common" ,"-aa"],
-      ["Imperfect" ,"Plural" ,"Common" ,"-ee’i"],
-      ["Perfect" ,"Singular" ,"Masc" ,"-u"],
-      ["Perfect" ,"Singular" ,"Fem" ,"-idi"],
-      ["Perfect" ,"Plural" ,"Neut" ,"-ee’i"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-SubjMarkerSelStem:",
-    "note": "K94s7.1.1.1(p.123) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
-    "common": {
-      "pos": "Verb",
-      "morphClass": "SubjMarkerSelStem"
-    },
-    "terms": [
-      ["tam" ,"number" ,"person" ,"gender" ,"token"],
-      ["Imperfect" ,"Singular" ,"Person1" ,"Common" ,"ha- + -a"],
-      ["Imperfect" ,"Singular" ,"Person2" ,"Common" ,"ha- + -ida"],
-      ["Imperfect" ,"Singular" ,"Person3" ,"Masc" ,"hi- + -i"],
-      ["Imperfect" ,"Singular" ,"Person3" ,"Fem" ,"hi- + -ida"],
-      ["Imperfect" ,"Plural" ,"Person1" ,"Common" ,"ha- + -ana"],
-      ["Imperfect" ,"Plural" ,"Person2" ,"Common" ,"ha- + -ida’i"],
-      ["Imperfect" ,"Plural" ,"Person3" ,"Common" ,"hi- + -iya’i"],
-      ["Perfect" ,"Singular" ,"Person1" ,"Common" ,"ha- + -i"],
-      ["Perfect" ,"Singular" ,"Person2" ,"Common" ,"ha- + -idi"],
-      ["Perfect" ,"Singular" ,"Person3" ,"Masc" ,"hi- + -i"],
-      ["Perfect" ,"Singular" ,"Person3" ,"Fem" ,"hi- + -idi"],
-      ["Perfect" ,"Plural" ,"Person1" ,"Common" ,"ha- + -ani"],
-      ["Perfect" ,"Plural" ,"Person2" ,"Common" ,"ha- + -idiri"],
-      ["Perfect" ,"Plural" ,"Person3" ,"Common" ,"hi- + -iri"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-SubjSuffAllomorph:",
-    "note": "K94s7.1.1.2(p.124)",
-    "common": {
-      "pos": "Verb",
-      "morphClass": "SubjSuffAllomorph"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø, -u"],
-      ["Singular" ,"Person2" ,"Common" ,"-id, -t"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i, -n!"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id, -t"],
-      ["Plural" ,"Person1" ,"Common" ,"-an, -in, -n!"],
-      ["Plural" ,"Person2" ,"Common" ,"-ida’i -idiri, -ta'i, -tiri"],
-      ["Plural" ,"Person3" ,"Common" ,"-iya’i, -iri, -n!a'i, -n!iri"]
+      ["Singular" ,"Person1" ,"Common" ,"koomă"],
+      ["Singular" ,"Person2" ,"Common" ,"kontă"],
+      ["Singular" ,"Person3" ,"Masc" ,"konă"],
+      ["Singular" ,"Person3" ,"Fem" ,"kontă"],
+      ["Plural" ,"Person1" ,"Common" ,"konă"],
+      ["Plural" ,"Person2" ,"Common" ,"kontay"],
+      ["Plural" ,"Person3" ,"Common" ,"konay"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffDentStemImperf:DentalStemImperfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-ImperfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
-      "stemClass": "DentalStem",
-      "tam": "Imperfect",
-      "morphClass": "SubjSuffDentStemImperf"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Plural" ,"Person1" ,"Common" ,"-an"],
-      ["Plural" ,"Person2" ,"Common" ,"-ida’i"],
-      ["Plural" ,"Person3" ,"Common" ,"-iya’i"]
+      ["Singular" ,"Person1" ,"Common" ,"kooma"],
+      ["Singular" ,"Person2" ,"Common" ,"konta"],
+      ["Singular" ,"Person3" ,"Masc" ,"kona"],
+      ["Singular" ,"Person3" ,"Fem" ,"konta"],
+      ["Plural" ,"Person1" ,"Common" ,"kona"],
+      ["Plural" ,"Person2" ,"Common" ,"konta’i"],
+      ["Plural" ,"Person3" ,"Common" ,"kona’i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffDentStemPerf:DentalStemPerfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-ImperfectAffirmativeStructure",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
-      "stemClass": "DentalStem",
-      "tam": "Perfect",
-      "morphClass": "SubjSuffDentStemPerf"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Plural" ,"Person1" ,"Common" ,"-an"],
-      ["Plural" ,"Person2" ,"Common" ,"-idiri"],
-      ["Plural" ,"Person3" ,"Common" ,"-iri"]
+      ["Singular" ,"Person1" ,"Common" ,"koom-Ø-a"],
+      ["Singular" ,"Person2" ,"Common" ,"koom-t-a"],
+      ["Singular" ,"Person3" ,"Masc" ,"koom-n!-a"],
+      ["Singular" ,"Person3" ,"Fem" ,"koom-t-a"],
+      ["Plural" ,"Person1" ,"Common" ,"koom-n!-a"],
+      ["Plural" ,"Person2" ,"Common" ,"koom-t-a-i"],
+      ["Plural" ,"Person3" ,"Common" ,"koom-n!-a-i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffGlideStemImperf:GlideStemImperfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-PerfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
-      "stemClass": "GlideStem",
-      "tam": "Imperfect",
-      "morphClass": "SubjSuffGlideStemImperf"
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Plural" ,"Person1" ,"Common" ,"-in"],
-      ["Plural" ,"Person2" ,"Common" ,"-ida’i"],
-      ["Plural" ,"Person3" ,"Common" ,"-iya’i"]
+      ["Singular" ,"Person1" ,"Common" ,"koomĭ"],
+      ["Singular" ,"Person2" ,"Common" ,"kontĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"koomĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"kontĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"konĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"kontirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"konirĭ"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffGlideStemPerfect:GlideStemPerfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-PerfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
-      "stemClass": "GlideStem",
-      "tam": "Perfect",
-      "morphClass": "SubjSuffGlideStemPerfect"
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Plural" ,"Person1" ,"Common" ,"-in"],
-      ["Plural" ,"Person2" ,"Common" ,"-idiri"],
-      ["Plural" ,"Person3" ,"Common" ,"-iri"]
+      ["Singular" ,"Person1" ,"Common" ,"koomi"],
+      ["Singular" ,"Person2" ,"Common" ,"konti"],
+      ["Singular" ,"Person3" ,"Masc" ,"koomi"],
+      ["Singular" ,"Person3" ,"Fem" ,"konti"],
+      ["Plural" ,"Person1" ,"Common" ,"koni"],
+      ["Plural" ,"Person2" ,"Common" ,"kontiri"],
+      ["Plural" ,"Person3" ,"Common" ,"koniri"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffHStemPerf:HStemImperfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-PerfectAffirmativeStructure",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Imperfect",
-      "morphClass": "SubjSuffHStemPerf"
+      "stemClass": "BaseStem",
+      "tam": "Perfect"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-u"],
-      ["Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Plural" ,"Person1" ,"Common" ,"-an"],
-      ["Plural" ,"Person2" ,"Common" ,"-ida’i"],
-      ["Plural" ,"Person3" ,"Common" ,"-iya’i"]
+      ["Singular" ,"Person1" ,"Common" ,"koom-Ø-i"],
+      ["Singular" ,"Person2" ,"Common" ,"koom-t-i"],
+      ["Singular" ,"Person3" ,"Masc" ,"koom-i-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"koom-t-i"],
+      ["Plural" ,"Person1" ,"Common" ,"koom-n!-i"],
+      ["Plural" ,"Person2" ,"Common" ,"koom-t-i-ri"],
+      ["Plural" ,"Person3" ,"Common" ,"koom-n!-i-ri"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffHStemPerf:HStemPerfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-SubjunctiveAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Perfect",
-      "morphClass": "SubjSuffHStemPerf"
+      "stemClass": "BaseStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Plural" ,"Person1" ,"Common" ,"-an"],
-      ["Plural" ,"Person2" ,"Common" ,"-idiri"],
-      ["Plural" ,"Person3" ,"Common" ,"-iri"]
+      ["Singular" ,"Person1" ,"Common" ,"koome"],
+      ["Singular" ,"Person2" ,"Common" ,"konte"],
+      ["Singular" ,"Person3" ,"Masc" ,"kone"],
+      ["Singular" ,"Person3" ,"Fem" ,"konte"],
+      ["Plural" ,"Person1" ,"Common" ,"kone"],
+      ["Plural" ,"Person2" ,"Common" ,"kontee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"konee’i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffNasStemImperf:NasalStemImperfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-SubjunctiveAffirmativeInterrogative",
+    "note": "K94s7.2.2  and  7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
-      "stemClass": "NasalStem",
-      "tam": "Imperfect",
-      "morphClass": "SubjSuffNasStemImperf"
+      "stemClass": "BaseStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-t"],
-      ["Singular" ,"Person3" ,"Masc" ,"-n!"],
-      ["Singular" ,"Person3" ,"Fem" ,"-t"],
-      ["Plural" ,"Person1" ,"Common" ,"-n!"],
-      ["Plural" ,"Person2" ,"Common" ,"-ta’i"],
-      ["Plural" ,"Person3" ,"Common" ,"-n!a’i"]
+      ["Singular" ,"Person1" ,"Common" ,"koomee"],
+      ["Singular" ,"Person2" ,"Common" ,"kontee"],
+      ["Singular" ,"Person3" ,"Masc" ,"konee"],
+      ["Singular" ,"Person3" ,"Fem" ,"kontee"],
+      ["Plural" ,"Person1" ,"Common" ,"konee"],
+      ["Plural" ,"Person2" ,"Common" ,"kontee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"konee’i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-SubjSuffNasStemPerf:NasalStemPerfect",
-    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-koom-SubjunctiveAffirmativeStructure",
+    "note": "K94s7.2.2 and 7.2.3",
     "common": {
+      "lexeme": "koom",
+      "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
-      "stemClass": "NasalStem",
-      "tam": "Perfect",
-      "morphClass": "SubjSuffNasStemPerf"
+      "stemClass": "BaseStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
-      ["Singular" ,"Person2" ,"Common" ,"-t"],
-      ["Singular" ,"Person3" ,"Masc" ,"-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"-t"],
-      ["Plural" ,"Person1" ,"Common" ,"-n!"],
-      ["Plural" ,"Person2" ,"Common" ,"indi"],
-      ["Plural" ,"Person3" ,"Common" ,"-n!iri"]
+      ["Singular" ,"Person1" ,"Common" ,"koom-Ø-ee"],
+      ["Singular" ,"Person2" ,"Common" ,"koom-t-ee"],
+      ["Singular" ,"Person3" ,"Masc" ,"koom-n!-ee"],
+      ["Singular" ,"Person3" ,"Fem" ,"koom-t-ee"],
+      ["Plural" ,"Person1" ,"Common" ,"koom-n!-ee"],
+      ["Plural" ,"Person2" ,"Common" ,"koom-t-ee-i"],
+      ["Plural" ,"Person3" ,"Common" ,"koom-n!-ee-i"]
     ]
   },
   {
-    "label": "brn-Verb:morph-VerbStemStructure:",
-    "note": "K94s7(p.122) :: The verb stem inflection consists of the following possible sequence:STEM - person - aspectMood - number - negation – interr :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "label": "brn-VerbBaseStem-qaat-alt-ImperfectNegative",
+    "note": "K94s7.1.1.2.5",
     "common": {
-      "pos": "Verb",
-      "morphClass": "VerbStemStructure"
-    },
-    "terms": [
-      ["stemInflCategory" ,"stemInflMorpheme" ,"number" ,"person" ,"gender" ,"token"],
-      ["AspectMood" ,"Imperfect" ,"Common" ,"Common" ,"Common" ,"-a"],
-      ["AspectMood" ,"Perfect" ,"Common" ,"Common" ,"Common" ,"-i"],
-      ["AspectMood" ,"Subjunctive" ,"Common" ,"Common" ,"Common" ,"-ee"],
-      ["Negative" ,"Negative" ,"Common" ,"Common" ,"Common" ,"-baɬi"],
-      ["Number" ,"Common" ,"Singular" ,"Common" ,"Common" ,"⊤"],
-      ["Number" ,"NumNonPerf" ,"Plural" ,"Common" ,"Common" ,"-‘i"],
-      ["Number" ,"NumPerf" ,"Plural" ,"Common" ,"Common" ,"-ri"],
-      ["Person" ,"Common" ,"Singular" ,"Person1" ,"Common" ,"-"],
-      ["Person" ,"Common" ,"Singular" ,"Person2" ,"Common" ,"-id"],
-      ["Person" ,"Common" ,"Singular" ,"Person3" ,"Masc" ,"-I"],
-      ["Person" ,"Common" ,"Singular" ,"Person3" ,"Fem" ,"-id"],
-      ["Person" ,"Common" ,"Plural" ,"Person1" ,"Common" ,"-an"],
-      ["SentenceType" ,"AffDecl" ,"Common" ,"Common" ,"Common" ,"{phonReduction}"],
-      ["SentenceType" ,"InterrogDir" ,"Common" ,"Common" ,"Common" ,"⊤"],
-      ["SentenceType" ,"InterrogRhet" ,"Common" ,"Common" ,"Common" ,"-la"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-VerbVsAdjNeg:-ʔar-",
-    "note": "K94s9.5.3 :: Der adjektivische Charakter des Negationssuffixes -baɬi :: The following paradigm illustrates the difference between the verbal suffix -baɬi,which gets reduced to –ba in the declarative,and the adjective baɬ,which undergoes no such reduction.",
-    "common": {
-      "lexeme": "ʔar",
-      "person": "Person2",
-      "pos": "Verb",
-      "morphClass": "VerbVsAdjNeg"
-    },
-    "terms": [
-      ["polarity" ,"predType" ,"number" ,"gender" ,"token"],
-      ["NegInterr" ,"Adjectival" ,"Singular" ,"Masc" ,"hagung báɬu ‘arimaa"],
-      ["NegInterr" ,"Adjectival" ,"Singular" ,"Fem" ,"haging báɬi ‘arimaa"],
-      ["NegInterr" ,"Adjectival" ,"Plural" ,"Common" ,"hangung báɬi ‘arimaa"],
-      ["NegInterr" ,"Verbal" ,"Singular" ,"Masc" ,"hang ‘arintíibaɬi"],
-      ["NegInterr" ,"Verbal" ,"Singular" ,"Fem" ,"hang ‘arintíibaɬi"],
-      ["NegInterr" ,"Verbal" ,"Plural" ,"Common" ,"hang ‘arintiríibaɬi"],
-      ["Negative" ,"Adjectival" ,"Singular" ,"Masc" ,"hagung baɬŭ ‘arimaa"],
-      ["Negative" ,"Adjectival" ,"Singular" ,"Fem" ,"haging baɬĭ ‘arimaa"],
-      ["Negative" ,"Adjectival" ,"Plural" ,"Common" ,"hangung baɬĭ ‘arimaa"],
-      ["Negative" ,"Verbal" ,"Singular" ,"Masc" ,"hang ‘arintiiba"],
-      ["Negative" ,"Verbal" ,"Singular" ,"Fem" ,"hang ‘arintiiba"],
-      ["Negative" ,"Verbal" ,"Plural" ,"Common" ,"hang ‘arintiriiba"]
-    ]
-  },
-  {
-    "label": "brn-Verb:morph-VerbalnounNeg:-doosl-Negative",
-    "note": "K94s9.5.3 :: Der adjektivische Charakter des Negationssuffixes -baɬi. This is a nominal type negative construction :: The adjectivally inflected baɬ comes inbetween the selector and the verbal noun form of the verb. Paradigm gives by way of example the second person forms.",
-    "common": {
-      "lexeme": "doosl",
-      "person": "Person2",
+      "lexeme": "qaat",
       "polarity": "Negative",
       "pos": "Verb",
-      "morphClass": "VerbalnounNeg"
+      "stemClass": "BaseStem",
+      "tam": "Imperfect"
     },
     "terms": [
-      ["tenseSel" ,"number" ,"gender" ,"token"],
-      ["Completive" ,"Singular" ,"Masc" ,"hagung baɬu dooɬa"],
-      ["Completive" ,"Singular" ,"Fem" ,"haging baɬi dooɬa"],
-      ["Completive" ,"Plural" ,"Common" ,"hangung baɬi dooɬa"],
-      ["Future1" ,"Singular" ,"Masc" ,"hagwaa baɬu dooɬa"],
-      ["Future1" ,"Singular" ,"Fem" ,"hagiyaa baɬi dooɬa"],
-      ["Future1" ,"Plural" ,"Common" ,"hangwaa baɬi dooɬa"],
-      ["Future2" ,"Singular" ,"Masc" ,"hagumaa baɬu dooɬa"],
-      ["Future2" ,"Singular" ,"Fem" ,"hagimaa baɬi dooɬa"],
-      ["Future2" ,"Plural" ,"Common" ,"hangumaa baɬi dooɬa"],
-      ["Habitual" ,"Singular" ,"Masc" ,"hagóo baɬu dooɬa"],
-      ["Habitual" ,"Singular" ,"Fem" ,"hagiyóo baɬi dooɬa"],
-      ["Habitual" ,"Plural" ,"Common" ,"hangóo baɬi dooɬa"],
-      ["Present" ,"Singular" ,"Masc" ,"hagu baɬu dooɬa"],
-      ["Present" ,"Singular" ,"Fem" ,"hagi baɬi dooɬa"],
-      ["Present" ,"Plural" ,"Common" ,"hangu baɬi dooɬa"],
-      ["Preterite" ,"Singular" ,"Masc" ,"hagwáa baɬu dooɬa"],
-      ["Preterite" ,"Singular" ,"Fem" ,"hagiyáa baɬi dooɬa"],
-      ["Preterite" ,"Plural" ,"Common" ,"hangwáa baɬi dooɬa"],
-      ["Prospective" ,"Singular" ,"Masc" ,"hagoo baɬu dooɬa"],
-      ["Prospective" ,"Singular" ,"Fem" ,"hagiyoo baɬi dooɬa"],
-      ["Prospective" ,"Plural" ,"Common" ,"hangoo baɬi dooɬa"]
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"ha qaată"],
+      ["Singular" ,"Person2" ,"Common" ,"ha qaadită"],
+      ["Singular" ,"Person3" ,"Masc" ,"qaatĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"qaatidă"],
+      ["Plural" ,"Person1" ,"Common" ,"ha qaaqaatană"],
+      ["Plural" ,"Person2" ,"Common" ,"ha qaaqaatiday"],
+      ["Plural" ,"Person3" ,"Common" ,"qaaqaatiyay"]
     ]
   },
   {
@@ -2394,11 +2253,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-ImperfectAffInterr",
+    "label": "brn-VerbDentalStem-qadid-ImperfectAffirmativeDeclarative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
-      "polarity": "AffInterr",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Imperfect"
@@ -2415,11 +2275,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-ImperfectAffirmative",
+    "label": "brn-VerbDentalStem-qadid-ImperfectAffirmativeStructure",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
       "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Imperfect"
@@ -2457,11 +2318,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-PerfectAffDecl",
+    "label": "brn-VerbDentalStem-qadid-PerfectAffirmativeDeclarative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
-      "polarity": "AffDecl",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Perfect"
@@ -2478,11 +2340,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-PerfectAffInterr",
+    "label": "brn-VerbDentalStem-qadid-PerfectAffirmativeInterrogative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
-      "polarity": "AffInterr",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Perfect"
@@ -2500,11 +2363,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-PerfectAffirmative",
+    "label": "brn-VerbDentalStem-qadid-PerfectAffirmativeStructure",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
       "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Perfect"
@@ -2542,11 +2406,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-SubjunctiveAffDecl",
+    "label": "brn-VerbDentalStem-qadid-SubjunctiveAffirmativeDeclarative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
-      "polarity": "AffDecl",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Subjunctive"
@@ -2563,11 +2428,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-SubjunctiveAffInterr",
+    "label": "brn-VerbDentalStem-qadid-SubjunctiveAffirmativeInterrogative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
-      "polarity": "AffInterr",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Subjunctive"
@@ -2584,11 +2450,12 @@
     ]
   },
   {
-    "label": "brn-VerbDentalStem-qadid-SubjunctiveAffirmative",
+    "label": "brn-VerbDentalStem-qadid-SubjunctiveAffirmativeStructure",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "qadid",
       "polarity": "Affirmative",
+      "mType": "Structure",
       "pos": "Verb",
       "stemClass": "DentalStem",
       "tam": "Subjunctive"
@@ -2602,48 +2469,6 @@
       ["Plural" ,"Person1" ,"Common" ,"qadid-an-ee"],
       ["Plural" ,"Person2" ,"Common" ,"qadid-id-ee-i"],
       ["Plural" ,"Person3" ,"Common" ,"qadid-i-ee-i"]
-    ]
-  },
-  {
-    "label": "brn-VerbGlideStem-xaw-ImperfectAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "xaw",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "GlideStem",
-      "tam": "Imperfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"xaw"],
-      ["Singular" ,"Person2" ,"Common" ,"xaydă"],
-      ["Singular" ,"Person3" ,"Masc" ,"xay"],
-      ["Singular" ,"Person3" ,"Fem" ,"xaydă"],
-      ["Plural" ,"Person1" ,"Common" ,"xaynă"],
-      ["Plural" ,"Person2" ,"Common" ,"xayday"],
-      ["Plural" ,"Person3" ,"Common" ,"xayay"]
-    ]
-  },
-  {
-    "label": "brn-VerbGlideStem-xaw-ImperfectAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "xaw",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "GlideStem",
-      "tam": "Imperfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"xawa"],
-      ["Singular" ,"Person2" ,"Common" ,"xayda"],
-      ["Singular" ,"Person3" ,"Masc" ,"xaya"],
-      ["Singular" ,"Person3" ,"Fem" ,"xayda"],
-      ["Plural" ,"Person1" ,"Common" ,"xayna"],
-      ["Plural" ,"Person2" ,"Common" ,"xayda’i"],
-      ["Plural" ,"Person3" ,"Common" ,"xaya’i"]
     ]
   },
   {
@@ -2668,6 +2493,50 @@
     ]
   },
   {
+    "label": "brn-VerbGlideStem-xaw-ImperfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "xaw",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
+      "pos": "Verb",
+      "stemClass": "GlideStem",
+      "tam": "Imperfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"xaw"],
+      ["Singular" ,"Person2" ,"Common" ,"xaydă"],
+      ["Singular" ,"Person3" ,"Masc" ,"xay"],
+      ["Singular" ,"Person3" ,"Fem" ,"xaydă"],
+      ["Plural" ,"Person1" ,"Common" ,"xaynă"],
+      ["Plural" ,"Person2" ,"Common" ,"xayday"],
+      ["Plural" ,"Person3" ,"Common" ,"xayay"]
+    ]
+  },
+  {
+    "label": "brn-VerbGlideStem-xaw-ImperfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "xaw",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
+      "pos": "Verb",
+      "stemClass": "GlideStem",
+      "tam": "Imperfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"xawa"],
+      ["Singular" ,"Person2" ,"Common" ,"xayda"],
+      ["Singular" ,"Person3" ,"Masc" ,"xaya"],
+      ["Singular" ,"Person3" ,"Fem" ,"xayda"],
+      ["Plural" ,"Person1" ,"Common" ,"xayna"],
+      ["Plural" ,"Person2" ,"Common" ,"xayda’i"],
+      ["Plural" ,"Person3" ,"Common" ,"xaya’i"]
+    ]
+  },
+  {
     "label": "brn-VerbGlideStem-xaw-ImperfectNegative",
     "note": "K94s7.1.1.2.3",
     "common": {
@@ -2689,11 +2558,11 @@
     ]
   },
   {
-    "label": "brn-VerbGlideStem-xaw-PerfectAffDecl",
+    "label": "brn-VerbGlideStem-xaw-PerfectAffirmative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "xaw",
-      "polarity": "AffDecl",
+      "polarity": "Affirmative",
       "pos": "Verb",
       "stemClass": "GlideStem",
       "tam": "Perfect"
@@ -2710,11 +2579,12 @@
     ]
   },
   {
-    "label": "brn-VerbGlideStem-xaw-PerfectAffirmative",
+    "label": "brn-VerbGlideStem-xaw-PerfectAffirmativeDeclarative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
       "lexeme": "xaw",
       "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
       "stemClass": "GlideStem",
       "tam": "Perfect"
@@ -2752,48 +2622,6 @@
     ]
   },
   {
-    "label": "brn-VerbGlideStem-xaw-SubjunctiveAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "xaw",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "GlideStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"xawe"],
-      ["Singular" ,"Person2" ,"Common" ,"xayde"],
-      ["Singular" ,"Person3" ,"Masc" ,"xaye"],
-      ["Singular" ,"Person3" ,"Fem" ,"xayde"],
-      ["Plural" ,"Person1" ,"Common" ,"xayne"],
-      ["Plural" ,"Person2" ,"Common" ,"xaydee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"xayee’i"]
-    ]
-  },
-  {
-    "label": "brn-VerbGlideStem-xaw-SubjunctiveAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "xaw",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "GlideStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"xawee"],
-      ["Singular" ,"Person2" ,"Common" ,"xaydee"],
-      ["Singular" ,"Person3" ,"Masc" ,"xayee"],
-      ["Singular" ,"Person3" ,"Fem" ,"xaydee"],
-      ["Plural" ,"Person1" ,"Common" ,"xaynee"],
-      ["Plural" ,"Person2" ,"Common" ,"xaydee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"xayee’i"]
-    ]
-  },
-  {
     "label": "brn-VerbGlideStem-xaw-SubjunctiveAffirmative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
@@ -2815,45 +2643,47 @@
     ]
   },
   {
-    "label": "brn-VerbHStem-dah-ImperfectAffDecl",
+    "label": "brn-VerbGlideStem-xaw-SubjunctiveAffirmativeDeclarative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
-      "lexeme": "dah",
-      "polarity": "AffDecl",
+      "lexeme": "xaw",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
       "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Imperfect"
+      "stemClass": "GlideStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"daw"],
-      ["Singular" ,"Person2" ,"Common" ,"dahadă ~ daadă"],
-      ["Singular" ,"Person3" ,"Masc" ,"dahĭ ~ day"],
-      ["Singular" ,"Person3" ,"Fem" ,"dahadă ~ daadă"],
-      ["Plural" ,"Person1" ,"Common" ,"dahană ~ daană"],
-      ["Plural" ,"Person2" ,"Common" ,"dahaday ~ daaday"],
-      ["Plural" ,"Person3" ,"Common" ,"dahiyay ~ dayay"]
+      ["Singular" ,"Person1" ,"Common" ,"xawe"],
+      ["Singular" ,"Person2" ,"Common" ,"xayde"],
+      ["Singular" ,"Person3" ,"Masc" ,"xaye"],
+      ["Singular" ,"Person3" ,"Fem" ,"xayde"],
+      ["Plural" ,"Person1" ,"Common" ,"xayne"],
+      ["Plural" ,"Person2" ,"Common" ,"xaydee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"xayee’i"]
     ]
   },
   {
-    "label": "brn-VerbHStem-dah-ImperfectAffInterr",
+    "label": "brn-VerbGlideStem-xaw-SubjunctiveAffirmativeInterrogative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
-      "lexeme": "dah",
-      "polarity": "AffInterr",
+      "lexeme": "xaw",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
       "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Imperfect"
+      "stemClass": "GlideStem",
+      "tam": "Subjunctive"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dawa"],
-      ["Singular" ,"Person2" ,"Common" ,"dahada"],
-      ["Singular" ,"Person3" ,"Masc" ,"dahiya"],
-      ["Singular" ,"Person3" ,"Fem" ,"dahada"],
-      ["Plural" ,"Person1" ,"Common" ,"dahana"],
-      ["Plural" ,"Person2" ,"Common" ,"dahada’i"],
-      ["Plural" ,"Person3" ,"Common" ,"dahiya’i"]
+      ["Singular" ,"Person1" ,"Common" ,"xawee"],
+      ["Singular" ,"Person2" ,"Common" ,"xaydee"],
+      ["Singular" ,"Person3" ,"Masc" ,"xayee"],
+      ["Singular" ,"Person3" ,"Fem" ,"xaydee"],
+      ["Plural" ,"Person1" ,"Common" ,"xaynee"],
+      ["Plural" ,"Person2" ,"Common" ,"xaydee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"xayee’i"]
     ]
   },
   {
@@ -2878,6 +2708,50 @@
     ]
   },
   {
+    "label": "brn-VerbHStem-dah-ImperfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "dah",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Imperfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"daw"],
+      ["Singular" ,"Person2" ,"Common" ,"dahadă ~ daadă"],
+      ["Singular" ,"Person3" ,"Masc" ,"dahĭ ~ day"],
+      ["Singular" ,"Person3" ,"Fem" ,"dahadă ~ daadă"],
+      ["Plural" ,"Person1" ,"Common" ,"dahană ~ daană"],
+      ["Plural" ,"Person2" ,"Common" ,"dahaday ~ daaday"],
+      ["Plural" ,"Person3" ,"Common" ,"dahiyay ~ dayay"]
+    ]
+  },
+  {
+    "label": "brn-VerbHStem-dah-ImperfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "dah",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Imperfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dawa"],
+      ["Singular" ,"Person2" ,"Common" ,"dahada"],
+      ["Singular" ,"Person3" ,"Masc" ,"dahiya"],
+      ["Singular" ,"Person3" ,"Fem" ,"dahada"],
+      ["Plural" ,"Person1" ,"Common" ,"dahana"],
+      ["Plural" ,"Person2" ,"Common" ,"dahada’i"],
+      ["Plural" ,"Person3" ,"Common" ,"dahiya’i"]
+    ]
+  },
+  {
     "label": "brn-VerbHStem-dah-ImperfectNegative",
     "note": "K94s7.1.1.2.6 :: Die HStem",
     "common": {
@@ -2896,48 +2770,6 @@
       ["Plural" ,"Person1" ,"Common" ,"ha dadahană"],
       ["Plural" ,"Person2" ,"Common" ,"ha dadahaday"],
       ["Plural" ,"Person3" ,"Common" ,"dadayay"]
-    ]
-  },
-  {
-    "label": "brn-VerbHStem-dah-PerfectAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "dah",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dahĭ ~ day"],
-      ["Singular" ,"Person2" ,"Common" ,"dahadĭ ~ daadĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"dahĭ ~ day"],
-      ["Singular" ,"Person3" ,"Fem" ,"dahadĭ ~ daadĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"dahanĭ ~ daanĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"dahadirĭ ~ daadirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"dahirĭ ~ dayrĭ"]
-    ]
-  },
-  {
-    "label": "brn-VerbHStem-dah-PerfectAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "dah",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dahi"],
-      ["Singular" ,"Person2" ,"Common" ,"dahadi"],
-      ["Singular" ,"Person3" ,"Masc" ,"dahi"],
-      ["Singular" ,"Person3" ,"Fem" ,"dahadi"],
-      ["Plural" ,"Person1" ,"Common" ,"dahani"],
-      ["Plural" ,"Person2" ,"Common" ,"dahadiri"],
-      ["Plural" ,"Person3" ,"Common" ,"dahiri"]
     ]
   },
   {
@@ -2962,6 +2794,50 @@
     ]
   },
   {
+    "label": "brn-VerbHStem-dah-PerfectAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "dah",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Perfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dahĭ ~ day"],
+      ["Singular" ,"Person2" ,"Common" ,"dahadĭ ~ daadĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"dahĭ ~ day"],
+      ["Singular" ,"Person3" ,"Fem" ,"dahadĭ ~ daadĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"dahanĭ ~ daanĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"dahadirĭ ~ daadirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"dahirĭ ~ dayrĭ"]
+    ]
+  },
+  {
+    "label": "brn-VerbHStem-dah-PerfectAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "dah",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Perfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dahi"],
+      ["Singular" ,"Person2" ,"Common" ,"dahadi"],
+      ["Singular" ,"Person3" ,"Masc" ,"dahi"],
+      ["Singular" ,"Person3" ,"Fem" ,"dahadi"],
+      ["Plural" ,"Person1" ,"Common" ,"dahani"],
+      ["Plural" ,"Person2" ,"Common" ,"dahadiri"],
+      ["Plural" ,"Person3" ,"Common" ,"dahiri"]
+    ]
+  },
+  {
     "label": "brn-VerbHStem-dah-PerfectNegative",
     "note": "K94s7.1.1.2.6 :: Die HStem",
     "common": {
@@ -2983,48 +2859,6 @@
     ]
   },
   {
-    "label": "brn-VerbHStem-dah-SubjunctiveAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "dah",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dahe"],
-      ["Singular" ,"Person2" ,"Common" ,"dahade ~ daade"],
-      ["Singular" ,"Person3" ,"Masc" ,"dahiye ~ daye"],
-      ["Singular" ,"Person3" ,"Fem" ,"dahade ~ daade"],
-      ["Plural" ,"Person1" ,"Common" ,"dahane ~ daane"],
-      ["Plural" ,"Person2" ,"Common" ,"dahadee’ĭ ~ daadee’ĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"dahiyee’ĭ ~ dayee’ĭ"]
-    ]
-  },
-  {
-    "label": "brn-VerbHStem-dah-SubjunctiveAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "dah",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "HStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dahee"],
-      ["Singular" ,"Person2" ,"Common" ,"dahadee"],
-      ["Singular" ,"Person3" ,"Masc" ,"dahiyee"],
-      ["Singular" ,"Person3" ,"Fem" ,"dahadee"],
-      ["Plural" ,"Person1" ,"Common" ,"dahanee"],
-      ["Plural" ,"Person2" ,"Common" ,"dahadee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"dahiyee’i"]
-    ]
-  },
-  {
     "label": "brn-VerbHStem-dah-SubjunctiveAffirmative",
     "note": "K94s7.2.2 and 7.2.3",
     "common": {
@@ -3043,6 +2877,50 @@
       ["Plural" ,"Person1" ,"Common" ,"dahane ~ daane"],
       ["Plural" ,"Person2" ,"Common" ,"dahadee'ĭ ~ daadee'ĭ"],
       ["Plural" ,"Person3" ,"Common" ,"dahiyee'ĭ ~ dayee'ĭ"]
+    ]
+  },
+  {
+    "label": "brn-VerbHStem-dah-SubjunctiveAffirmativeDeclarative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "dah",
+      "polarity": "Affirmative",
+      "clauseType": "Declarative",
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Subjunctive"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dahe"],
+      ["Singular" ,"Person2" ,"Common" ,"dahade ~ daade"],
+      ["Singular" ,"Person3" ,"Masc" ,"dahiye ~ daye"],
+      ["Singular" ,"Person3" ,"Fem" ,"dahade ~ daade"],
+      ["Plural" ,"Person1" ,"Common" ,"dahane ~ daane"],
+      ["Plural" ,"Person2" ,"Common" ,"dahadee’ĭ ~ daadee’ĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"dahiyee’ĭ ~ dayee’ĭ"]
+    ]
+  },
+  {
+    "label": "brn-VerbHStem-dah-SubjunctiveAffirmativeInterrogative",
+    "note": "K94s7.2.2 and 7.2.3",
+    "common": {
+      "lexeme": "dah",
+      "polarity": "Affirmative",
+      "clauseType": "Interrogative",
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Subjunctive"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"dahee"],
+      ["Singular" ,"Person2" ,"Common" ,"dahadee"],
+      ["Singular" ,"Person3" ,"Masc" ,"dahiyee"],
+      ["Singular" ,"Person3" ,"Fem" ,"dahadee"],
+      ["Plural" ,"Person1" ,"Common" ,"dahanee"],
+      ["Plural" ,"Person2" ,"Common" ,"dahadee’i"],
+      ["Plural" ,"Person3" ,"Common" ,"dahiyee’i"]
     ]
   },
   {
@@ -3211,486 +3089,678 @@
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-ImperfectAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-DervStemSuff",
+    "note": "K94s6.3(pp.93-109) :: Derived stem template:comitative - applicative - frequentative - ROOT - distributive - {progressive,intensive}- inchoative - durative - {mediopassive,continuative}- causative :: The plural root (suppletive in a number of verbs) is often formed with a derived stem (frequentative,continuative,durative,progressivew,or intensive - cf. section 6.5.2,pp. 113 - 119 :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
     "common": {
-      "lexeme": "doosl",
-      "polarity": "AffDecl",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
+      "morphClass": "DervStemSuff"
     },
     "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬiyay"]
+      ["derivedStem" ,"token"],
+      ["Applicative" ,"hii-"],
+      ["Causative" ,"-is"],
+      ["Comitative" ,""],
+      ["Continuative" ,"-id!"],
+      ["Distributive" ,"{CV}n [total reduplication]"],
+      ["Durative" ,"-[i]m"],
+      ["Frequentative" ,"CV- [first syllable reduplication]"],
+      ["Inchoative" ,"-aw"],
+      ["Intensive" ,"-aaC- [reduplication of rootFinal C]"],
+      ["Mediopassive" ,"-id!"],
+      ["Progressive" ,"-VVC- [reduplication of rootFinal syllable with vowel lengthening]"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-ImperfectAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-FiniteSel-doosl-Imperfect",
+    "note": "K94s7.2.5.2 :: The imperf preterite needs a progressive durative stem.",
     "common": {
+      "derivedStem": "ProgDur",
       "lexeme": "doosl",
-      "polarity": "AffInterr",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
+      "tam": "Imperfect",
+      "tenseSel": "Preterite",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬa"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬida"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬiya"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬida"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬana"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬida’i"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬiya’i"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana háa dooɬiiɬimă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu háa dooɬiiɬintă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina yáa dooɬiiɬină"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina yáa dooɬiiɬintă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray háa dooɬiiɬină"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray háa dooɬiiɬintay"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay yáa dooɬiiɬinay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-ImperfectAffirmative",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-FiniteSel-doosl-Imperfect",
+    "note": "K94s7.2.5.3 :: Das Kompletivmorphem :: Der imperfische Aspekt dagegen fordert wiederum den progressivischem Verbalstamm:",
     "common": {
+      "derivedStem": "ProgDur",
       "lexeme": "doosl",
-      "polarity": "Affirmative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
+      "tam": "Imperfect",
+      "tenseSel": "Completive",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬ-Ø-a"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬ-id-a"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬ-i-a"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬ-id-a"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬ-an-a"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬ-id-a-i"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬ-i-a-i"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana hang dooɬiiɬimă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu hang dooɬiiɬintă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina hing dooɬiiɬină"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina hing dooɬiiɬintă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray hang dooɬiiɬină"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hang dooɬiiɬintay"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay hing dooɬiilinay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-ImperfectNegative",
-    "note": "K94s7.1.1.2.7",
-    "common": {
-      "lexeme": "doosl",
-      "polarity": "Negative",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"ha dooɬă"],
-      ["Singular" ,"Person2" ,"Common" ,"ha dooɬidă"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬidă"],
-      ["Plural" ,"Person1" ,"Common" ,"ha dooɬană"],
-      ["Plural" ,"Person2" ,"Common" ,"ha dooɬiday"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬiyay"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-doosl-PerfectAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "doosl",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬĭ"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬidĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬidĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬanĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬidirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬirĭ"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-doosl-PerfectAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "doosl",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬi"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬidi"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬi"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬidi"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬani"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬidiri"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬiri"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-doosl-PerfectAffirmative",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "doosl",
-      "polarity": "Affirmative",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬ-Ø-i"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬ-id-i"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬ-i-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬ-id-i"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬ-an-i"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬ-id-i-ri"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬ-i-i-ri"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-doosl-PerfectNegative",
-    "note": "K94s7.1.1.2.7",
+    "label": "brn-morphVerb-FiniteSel-doosl-ImperfectNegative",
+    "note": "K94s7.2.5.1",
     "common": {
       "lexeme": "doosl",
       "polarity": "Negative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
+      "tam": "Imperfect",
+      "tenseSel": "Present",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"háa dooɬĭ"],
-      ["Singular" ,"Person2" ,"Common" ,"háa dooɬidĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"yáa dooɬĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"yáa dooɬidĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"háa dooɬanĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"háa dooɬidirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"yáa dooɬirĭ"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana ha dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu ha dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray ha dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray ha dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay dooɬiyay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-SubjunctiveAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-FiniteSel-doosl-ImperfectNegative",
+    "note": "K94s7.2.5.4 :: Das Beispielparadigma fur den Habitual lautet:",
     "common": {
       "lexeme": "doosl",
-      "polarity": "AffDecl",
+      "polarity": "Negative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Subjunctive"
+      "tam": "Imperfect",
+      "tenseSel": "Habitual",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬe"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬide"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬiye"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬide"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬane"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬidee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬiyee’i"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana hóo dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu hóo dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina yóo dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina yóo dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray hóo dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hóo dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay yóo dooɬiyay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-SubjunctiveAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-FiniteSel-doosl-ImperfectNegative",
+    "note": "K94s7.2.5.5 :: Das Beispielparadigma fur den Prospektiv lautet:",
     "common": {
       "lexeme": "doosl",
-      "polarity": "AffInterr",
+      "polarity": "Negative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Subjunctive"
+      "tam": "Imperfect",
+      "tenseSel": "Prospective",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬee"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬidee"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬiyee"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬidee"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬanee"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬidee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬiyee’i"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana hoo dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu hoo dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina yoo dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina yoo dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray hoo dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hoo dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay yoo dooɬiyay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-doosl-SubjunctiveAffirmative",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-FiniteSel-doosl-ImperfectNegative",
+    "note": "K94s7.2.5.6 :: Das Paradigma fur Futur 1 lautet:",
     "common": {
       "lexeme": "doosl",
-      "polarity": "Affirmative",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"dooɬ-Ø-ee"],
-      ["Singular" ,"Person2" ,"Common" ,"dooɬ-id-ee"],
-      ["Singular" ,"Person3" ,"Masc" ,"dooɬ-i-ee"],
-      ["Singular" ,"Person3" ,"Fem" ,"dooɬ-id-ee"],
-      ["Plural" ,"Person1" ,"Common" ,"dooɬ-an-ee"],
-      ["Plural" ,"Person2" ,"Common" ,"dooɬ-id-ee-i"],
-      ["Plural" ,"Person3" ,"Common" ,"dooɬ-i-ee-i"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-gu-ImperfectNegative",
-    "note": "K94s7.1.1.2.7 :: [Assimilation of vowel of –id- after //]",
-    "common": {
-      "lexeme": "gu",
       "polarity": "Negative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
+      "tam": "Imperfect",
+      "tenseSel": "Future1",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"ha gu’ă"],
-      ["Singular" ,"Person2" ,"Common" ,"ha gu’udă"],
-      ["Singular" ,"Person3" ,"Masc" ,"gu’"],
-      ["Singular" ,"Person3" ,"Fem" ,"gu’udă"],
-      ["Plural" ,"Person1" ,"Common" ,"ha gu’ună"],
-      ["Plural" ,"Person2" ,"Common" ,"ha gu’untay"],
-      ["Plural" ,"Person3" ,"Common" ,"gu’unay"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana haa dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu haa dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina yaa dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina yaa dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray haa dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray haa dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay yaa dooɬiyay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-gu-PerfectNegative",
-    "note": "K94s7.1.1.2.7 :: [Assimilation of vowel of –id- after //]",
+    "label": "brn-morphVerb-FiniteSel-doosl-ImperfectNegative",
+    "note": "K94s7.2.5.6",
     "common": {
-      "lexeme": "gu",
+      "lexeme": "doosl",
       "polarity": "Negative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
+      "tam": "Imperfect",
+      "tenseSel": "Future2",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"háa gu’ĭ"],
-      ["Singular" ,"Person2" ,"Common" ,"háa gu’udĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"yáa gu’ĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"yáa gu’udĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"háa gu’unĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"háa gu’untirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"yáa gu’unirĭ"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana hamaa dooɬă"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu hamaa dooɬidă"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina himaa dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina himaa dooɬidă"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray hamaa dooɬană"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hamaa dooɬiday"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay himaa dooɬiyay"]
     ]
   },
   {
-    "label": "brn-VerbUnmrkStem-koom-ImperfectAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
+    "label": "brn-morphVerb-FiniteSel-doosl-PerfectNegative",
+    "note": "K94s7.2.5.3 :: Das Kompletivmorphem perf",
     "common": {
-      "lexeme": "koom",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koomă"],
-      ["Singular" ,"Person2" ,"Common" ,"kontă"],
-      ["Singular" ,"Person3" ,"Masc" ,"konă"],
-      ["Singular" ,"Person3" ,"Fem" ,"kontă"],
-      ["Plural" ,"Person1" ,"Common" ,"konă"],
-      ["Plural" ,"Person2" ,"Common" ,"kontay"],
-      ["Plural" ,"Person3" ,"Common" ,"konay"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-ImperfectAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"kooma"],
-      ["Singular" ,"Person2" ,"Common" ,"konta"],
-      ["Singular" ,"Person3" ,"Masc" ,"kona"],
-      ["Singular" ,"Person3" ,"Fem" ,"konta"],
-      ["Plural" ,"Person1" ,"Common" ,"kona"],
-      ["Plural" ,"Person2" ,"Common" ,"konta’i"],
-      ["Plural" ,"Person3" ,"Common" ,"kona’i"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-ImperfectAffirmative",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "Affirmative",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koom-Ø-a"],
-      ["Singular" ,"Person2" ,"Common" ,"koom-t-a"],
-      ["Singular" ,"Person3" ,"Masc" ,"koom-n!-a"],
-      ["Singular" ,"Person3" ,"Fem" ,"koom-t-a"],
-      ["Plural" ,"Person1" ,"Common" ,"koom-n!-a"],
-      ["Plural" ,"Person2" ,"Common" ,"koom-t-a-i"],
-      ["Plural" ,"Person3" ,"Common" ,"koom-n!-a-i"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-PerfectAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koomĭ"],
-      ["Singular" ,"Person2" ,"Common" ,"kontĭ"],
-      ["Singular" ,"Person3" ,"Masc" ,"koomĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"kontĭ"],
-      ["Plural" ,"Person1" ,"Common" ,"konĭ"],
-      ["Plural" ,"Person2" ,"Common" ,"kontirĭ"],
-      ["Plural" ,"Person3" ,"Common" ,"konirĭ"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-PerfectAffInterr",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koomi"],
-      ["Singular" ,"Person2" ,"Common" ,"konti"],
-      ["Singular" ,"Person3" ,"Masc" ,"koomi"],
-      ["Singular" ,"Person3" ,"Fem" ,"konti"],
-      ["Plural" ,"Person1" ,"Common" ,"koni"],
-      ["Plural" ,"Person2" ,"Common" ,"kontiri"],
-      ["Plural" ,"Person3" ,"Common" ,"koniri"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-PerfectAffirmative",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "Affirmative",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Perfect"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koom-Ø-i"],
-      ["Singular" ,"Person2" ,"Common" ,"koom-t-i"],
-      ["Singular" ,"Person3" ,"Masc" ,"koom-i-i"],
-      ["Singular" ,"Person3" ,"Fem" ,"koom-t-i"],
-      ["Plural" ,"Person1" ,"Common" ,"koom-n!-i"],
-      ["Plural" ,"Person2" ,"Common" ,"koom-t-i-ri"],
-      ["Plural" ,"Person3" ,"Common" ,"koom-n!-i-ri"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-SubjunctiveAffDecl",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "AffDecl",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koome"],
-      ["Singular" ,"Person2" ,"Common" ,"konte"],
-      ["Singular" ,"Person3" ,"Masc" ,"kone"],
-      ["Singular" ,"Person3" ,"Fem" ,"konte"],
-      ["Plural" ,"Person1" ,"Common" ,"kone"],
-      ["Plural" ,"Person2" ,"Common" ,"kontee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"konee’i"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-SubjunctiveAffInterr",
-    "note": "K94s7.2.2  and  7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "AffInterr",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koomee"],
-      ["Singular" ,"Person2" ,"Common" ,"kontee"],
-      ["Singular" ,"Person3" ,"Masc" ,"konee"],
-      ["Singular" ,"Person3" ,"Fem" ,"kontee"],
-      ["Plural" ,"Person1" ,"Common" ,"konee"],
-      ["Plural" ,"Person2" ,"Common" ,"kontee’i"],
-      ["Plural" ,"Person3" ,"Common" ,"konee’i"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-koom-SubjunctiveAffirmative",
-    "note": "K94s7.2.2 and 7.2.3",
-    "common": {
-      "lexeme": "koom",
-      "polarity": "Affirmative",
-      "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Subjunctive"
-    },
-    "terms": [
-      ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"koom-Ø-ee"],
-      ["Singular" ,"Person2" ,"Common" ,"koom-t-ee"],
-      ["Singular" ,"Person3" ,"Masc" ,"koom-n!-ee"],
-      ["Singular" ,"Person3" ,"Fem" ,"koom-t-ee"],
-      ["Plural" ,"Person1" ,"Common" ,"koom-n!-ee"],
-      ["Plural" ,"Person2" ,"Common" ,"koom-t-ee-i"],
-      ["Plural" ,"Person3" ,"Common" ,"koom-n!-ee-i"]
-    ]
-  },
-  {
-    "label": "brn-VerbUnmrkStem-qaat-alt-ImperfectNegative",
-    "note": "K94s7.1.1.2.5",
-    "common": {
-      "lexeme": "qaat-alt",
+      "lexeme": "doosl",
       "polarity": "Negative",
       "pos": "Verb",
-      "stemClass": "UnmrkStem",
-      "tam": "Imperfect"
+      "tam": "Perfect",
+      "tenseSel": "Completive",
+      "morphClass": "FiniteSel"
     },
     "terms": [
       ["number" ,"person" ,"gender" ,"token"],
-      ["Singular" ,"Person1" ,"Common" ,"ha qaată"],
-      ["Singular" ,"Person2" ,"Common" ,"ha qaadită"],
-      ["Singular" ,"Person3" ,"Masc" ,"qaatĭ"],
-      ["Singular" ,"Person3" ,"Fem" ,"qaatidă"],
-      ["Plural" ,"Person1" ,"Common" ,"ha qaaqaatană"],
-      ["Plural" ,"Person2" ,"Common" ,"ha qaaqaatiday"],
-      ["Plural" ,"Person3" ,"Common" ,"qaaqaatiyay"]
+      ["Singular" ,"Person1" ,"Common" ,"‘ana hang dooɬĭ"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu hang dooɬidĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina hing dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina hing dooɬidĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray hang dooɬanĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray hang dooɬidirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"‘inay hing dooɬirĭ"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-FiniteSel-doosl-PerfectNegative",
+    "note": "K94s7.2.5.2",
+    "common": {
+      "lexeme": "doosl",
+      "polarity": "Negative",
+      "pos": "Verb",
+      "tam": "Perfect",
+      "tenseSel": "Preterite",
+      "morphClass": "FiniteSel"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"‘ana háa dooɬĭ"],
+      ["Singular" ,"Person2" ,"Common" ,"‘ugu háa dooɬidĭ"],
+      ["Singular" ,"Person3" ,"Masc" ,"‘ina yáa dooɬĭ"],
+      ["Singular" ,"Person3" ,"Fem" ,"‘ina yáa dooɬidĭ"],
+      ["Plural" ,"Person1" ,"Common" ,"dandiray háa dooɬanĭ"],
+      ["Plural" ,"Person2" ,"Common" ,"‘unkuray háa dooɬidirĭ"],
+      ["Plural" ,"Person3" ,"Common" ,"inay yáa dooɬiĭ"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-ImperativeApplicativeImperative",
+    "note": "K94s7.2.16 :: In the imprtv,applicative verbs do not have the prefix hil-,but suffix a kind of protemanteau morpheme. [Object indication not possible.]",
+    "common": {
+      "derivedStem": "Applicative",
+      "person": "Person2",
+      "pos": "Verb",
+      "tam": "Imperative",
+      "morphClass": "ImperativeApplicative"
+    },
+    "terms": [
+      ["number" ,"orientation" ,"token"],
+      ["Plural" ,"NonVentive" ,"-aw"],
+      ["Plural" ,"Ventive" ,"-aaru"],
+      ["Singular" ,"NonVentive" ,"-i"],
+      ["Singular" ,"Ventive" ,"-aayu"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-ImperativeCompAnalysisImperative",
+    "note": "K94s7.2.16(p.180) :: [An attempt to combine a subj/obj marker component in various classes of imperative -- other dimensional presentations possible (features for ventive, object gender).]",
+    "common": {
+      "pos": "Verb",
+      "tam": "Imperative",
+      "morphClass": "ImperativeCompAnalysis"
+    },
+    "terms": [
+      ["imprtvComponent" ,"token"],
+      ["Applicative" ,"-u"],
+      ["NonVent" ,"-i"],
+      ["NonVent" ,"-a"],
+      ["Obj3GenderF" ,"-a"],
+      ["Obj3GenderM" ,"-u"],
+      ["Obj3GenderN" ,"-i"],
+      ["Obj3Marker" ,"-k"],
+      ["SubjNumObj3" ,"-na"],
+      ["Vent" ,"-a"],
+      ["Vent" ,"-aari"],
+      ["Vent" ,"-an"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-ImperativeObject3Imperative",
+    "note": "K94s7.2.16 :: [REV: insert :number(subj)]",
+    "common": {
+      "person": "Person2",
+      "pos": "Verb",
+      "prsObj": "PObj3",
+      "tam": "Imperative",
+      "morphClass": "ImperativeObject3"
+    },
+    "terms": [
+      ["orientation" ,"gndObj" ,"number" ,"token"],
+      ["NonVentive" ,"Neut" ,"Singular" ,"-eki"],
+      ["NonVentive" ,"Masc" ,"Singular" ,"-eku"],
+      ["NonVentive" ,"Fem" ,"Singular" ,"-eka"],
+      ["NonVentive" ,"Neut" ,"Plural" ,"-akina"],
+      ["NonVentive" ,"Masc" ,"Plural" ,"-akuna"],
+      ["NonVentive" ,"Fem" ,"Plural" ,"-akana"],
+      ["Ventive" ,"Neut" ,"Singular" ,"-anki"],
+      ["Ventive" ,"Masc" ,"Singular" ,"-anku"],
+      ["Ventive" ,"Fem" ,"Singular" ,"-anka"],
+      ["Ventive" ,"Neut" ,"Plural" ,"-ankina"],
+      ["Ventive" ,"Masc" ,"Plural" ,"-ankuna"],
+      ["Ventive" ,"Fem" ,"Plural" ,"-ankana"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-ImperativeWithObj-kiis-Imperative",
+    "note": "K94s7.2.16(p.179) :: [REV: insert :number (subj)]",
+    "common": {
+      "lexeme": "kiis",
+      "person": "Person2",
+      "pos": "Verb",
+      "tam": "Imperative",
+      "morphClass": "ImperativeWithObj"
+    },
+    "terms": [
+      ["orientation" ,"gndObj" ,"number" ,"token"],
+      ["NonVentive" ,"Neut" ,"Plural" ,"kiʕisakină"],
+      ["NonVentive" ,"Neut" ,"Singular" ,"kiʕisekĭ"],
+      ["NonVentive" ,"Masc" ,"Plural" ,"kiʕisakună"],
+      ["NonVentive" ,"Masc" ,"Singular" ,"kiʕisekŭ"],
+      ["NonVentive" ,"Fem" ,"Singular" ,"kiʕisekă"],
+      ["NonVentive" ,"Fem" ,"Plural" ,"kiʕisakană"],
+      ["Ventive" ,"Neut" ,"Plural" ,"kiʕisankină"],
+      ["Ventive" ,"Neut" ,"Singular" ,"kiʕisankĭ"],
+      ["Ventive" ,"Masc" ,"Singular" ,"kiʕisankŭ"],
+      ["Ventive" ,"Masc" ,"Plural" ,"kiʕisankună"],
+      ["Ventive" ,"Fem" ,"Singular" ,"kiʕisankă"],
+      ["Ventive" ,"Fem" ,"Plural" ,"kiʕisankună"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-InterrGen",
+    "note": "K94s9.6.1(p.213) :: Die Satzfrage. Comparative list of morphological markers in declarative (with final reduction) and interrogative (without final reduction). On p, 214 gives list of imperative endings to make point that since imperative interrogatives do not exist, imperatives always have final reduction. Cf. pdgms: ImperativeCompAnalysis, ImperativeObject3, ImperativeApplicative.",
+    "common": {
+      "pos": "Verb",
+      "morphClass": "InterrGen"
+    },
+    "terms": [
+      ["gramFunction" ,"polarity" ,"token"],
+      ["AdjSuffF" ,"Declarative" ,"-]"],
+      ["AdjSuffF" ,"Interrogative" ,"-i"],
+      ["AdjSuffM" ,"Declarative" ,"-ŭ"],
+      ["AdjSuffM" ,"Interrogative" ,"-u"],
+      ["ImperfSuff" ,"Declarative" ,"ă"],
+      ["ImperfSuff" ,"Interrogative" ,"-a"],
+      ["NegSuff" ,"Declarative" ,"-ba"],
+      ["NegSuff" ,"Interrogative" ,"-baɬi"],
+      ["NominalPred" ,"Declarative" ,"∅"],
+      ["NominalPred" ,"Interrogative" ,"-goo"],
+      ["ParticipleSuffImprfSg" ,"Declarative" ,"-a"],
+      ["ParticipleSuffImprfSg" ,"Interrogative" ,"-aa"],
+      ["ParticipleSuffPerfF" ,"Declarative" ,"-idĭ"],
+      ["ParticipleSuffPerfF" ,"Interrogative" ,"-idi"],
+      ["ParticipleSuffPerfM" ,"Declarative" ,"-ŭ"],
+      ["ParticipleSuffPerfM" ,"Interrogative" ,"-u"],
+      ["ParticipleSuffPerfPl" ,"Declarative" ,"-ee’ĭ"],
+      ["ParticipleSuffPerfPl" ,"Interrogative" ,"-ee’i"],
+      ["PerfSuff" ,"Declarative" ,"ĭ"],
+      ["PerfSuff" ,"Interrogative" ,"-i"],
+      ["Subj3sgImperf" ,"Declarative" ,"ĭ"],
+      ["Subj3sgImperf" ,"Interrogative" ,"-iya"],
+      ["SubjPlImperf" ,"Declarative" ,"-y"],
+      ["SubjPlImperf" ,"Interrogative" ,"-‘i"],
+      ["SubjPlPerf" ,"Declarative" ,"-rĭ"],
+      ["SubjPlPerf" ,"Interrogative" ,"-ri"],
+      ["SubjunctiveSuff" ,"Declarative" ,"-e"],
+      ["SubjunctiveSuff" ,"Interrogative" ,"-ee"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-ParticipleSuff",
+    "note": "K94s7.3",
+    "common": {
+      "pos": "Verb",
+      "morphClass": "ParticipleSuff"
+    },
+    "terms": [
+      ["tam" ,"number" ,"gender" ,"token"],
+      ["Imperfect" ,"Singular" ,"Common" ,"-aa"],
+      ["Imperfect" ,"Plural" ,"Common" ,"-ee’i"],
+      ["Perfect" ,"Singular" ,"Masc" ,"-u"],
+      ["Perfect" ,"Singular" ,"Fem" ,"-idi"],
+      ["Perfect" ,"Plural" ,"Neut" ,"-ee’i"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjAgr",
+    "note": "K94s5.6(p.87) :: [A conflation of several person marker paradigms]",
+    "common": {
+      "pos": "Verb",
+      "morphClass": "SubjAgr"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"_NULL, -u"],
+      ["Singular" ,"Person2" ,"Masc" ,"-id"],
+      ["Singular" ,"Person2" ,"Fem" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-an"],
+      ["Plural" ,"Person2" ,"Common" ,"-id, -'i, -ri"],
+      ["Plural" ,"Person3" ,"Common" ,"-i, -'i, -ri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjMarkerSelStem",
+    "note": "K94s7.1.1.1(p.123) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "morphClass": "SubjMarkerSelStem"
+    },
+    "terms": [
+      ["tam" ,"number" ,"person" ,"gender" ,"token"],
+      ["Imperfect" ,"Singular" ,"Person1" ,"Common" ,"ha- + -a"],
+      ["Imperfect" ,"Singular" ,"Person2" ,"Common" ,"ha- + -ida"],
+      ["Imperfect" ,"Singular" ,"Person3" ,"Masc" ,"hi- + -i"],
+      ["Imperfect" ,"Singular" ,"Person3" ,"Fem" ,"hi- + -ida"],
+      ["Imperfect" ,"Plural" ,"Person1" ,"Common" ,"ha- + -ana"],
+      ["Imperfect" ,"Plural" ,"Person2" ,"Common" ,"ha- + -ida’i"],
+      ["Imperfect" ,"Plural" ,"Person3" ,"Common" ,"hi- + -iya’i"],
+      ["Perfect" ,"Singular" ,"Person1" ,"Common" ,"ha- + -i"],
+      ["Perfect" ,"Singular" ,"Person2" ,"Common" ,"ha- + -idi"],
+      ["Perfect" ,"Singular" ,"Person3" ,"Masc" ,"hi- + -i"],
+      ["Perfect" ,"Singular" ,"Person3" ,"Fem" ,"hi- + -idi"],
+      ["Perfect" ,"Plural" ,"Person1" ,"Common" ,"ha- + -ani"],
+      ["Perfect" ,"Plural" ,"Person2" ,"Common" ,"ha- + -idiri"],
+      ["Perfect" ,"Plural" ,"Person3" ,"Common" ,"hi- + -iri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffAllomorph",
+    "note": "K94s7.1.1.2(p.124)",
+    "common": {
+      "pos": "Verb",
+      "morphClass": "SubjSuffAllomorph"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø, -u"],
+      ["Singular" ,"Person2" ,"Common" ,"-id, -t"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i, -n!"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id, -t"],
+      ["Plural" ,"Person1" ,"Common" ,"-an, -in, -n!"],
+      ["Plural" ,"Person2" ,"Common" ,"-ida’i -idiri, -ta'i, -tiri"],
+      ["Plural" ,"Person3" ,"Common" ,"-iya’i, -iri, -n!a'i, -n!iri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffDentStemImperfDentalStemImperfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "DentalStem",
+      "tam": "Imperfect",
+      "morphClass": "SubjSuffDentStemImperf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-an"],
+      ["Plural" ,"Person2" ,"Common" ,"-ida’i"],
+      ["Plural" ,"Person3" ,"Common" ,"-iya’i"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffDentStemPerfDentalStemPerfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "DentalStem",
+      "tam": "Perfect",
+      "morphClass": "SubjSuffDentStemPerf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-an"],
+      ["Plural" ,"Person2" ,"Common" ,"-idiri"],
+      ["Plural" ,"Person3" ,"Common" ,"-iri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffGlideStemImperfGlideStemImperfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "GlideStem",
+      "tam": "Imperfect",
+      "morphClass": "SubjSuffGlideStemImperf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-in"],
+      ["Plural" ,"Person2" ,"Common" ,"-ida’i"],
+      ["Plural" ,"Person3" ,"Common" ,"-iya’i"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffGlideStemPerfectGlideStemPerfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "GlideStem",
+      "tam": "Perfect",
+      "morphClass": "SubjSuffGlideStemPerfect"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-in"],
+      ["Plural" ,"Person2" ,"Common" ,"-idiri"],
+      ["Plural" ,"Person3" ,"Common" ,"-iri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffHStemPerfHStemImperfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Imperfect",
+      "morphClass": "SubjSuffHStemPerf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-u"],
+      ["Singular" ,"Person2" ,"Common" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-an"],
+      ["Plural" ,"Person2" ,"Common" ,"-ida’i"],
+      ["Plural" ,"Person3" ,"Common" ,"-iya’i"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffHStemPerfHStemPerfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "HStem",
+      "tam": "Perfect",
+      "morphClass": "SubjSuffHStemPerf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-id"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-id"],
+      ["Plural" ,"Person1" ,"Common" ,"-an"],
+      ["Plural" ,"Person2" ,"Common" ,"-idiri"],
+      ["Plural" ,"Person3" ,"Common" ,"-iri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffNasStemImperfNasalStemImperfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "NasalStem",
+      "tam": "Imperfect",
+      "morphClass": "SubjSuffNasStemImperf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-t"],
+      ["Singular" ,"Person3" ,"Masc" ,"-n!"],
+      ["Singular" ,"Person3" ,"Fem" ,"-t"],
+      ["Plural" ,"Person1" ,"Common" ,"-n!"],
+      ["Plural" ,"Person2" ,"Common" ,"-ta’i"],
+      ["Plural" ,"Person3" ,"Common" ,"-n!a’i"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-SubjSuffNasStemPerfNasalStemPerfect",
+    "note": "K94s7.1.1.2(p.124) :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "stemClass": "NasalStem",
+      "tam": "Perfect",
+      "morphClass": "SubjSuffNasStemPerf"
+    },
+    "terms": [
+      ["number" ,"person" ,"gender" ,"token"],
+      ["Singular" ,"Person1" ,"Common" ,"-Ø"],
+      ["Singular" ,"Person2" ,"Common" ,"-t"],
+      ["Singular" ,"Person3" ,"Masc" ,"-i"],
+      ["Singular" ,"Person3" ,"Fem" ,"-t"],
+      ["Plural" ,"Person1" ,"Common" ,"-n!"],
+      ["Plural" ,"Person2" ,"Common" ,"indi"],
+      ["Plural" ,"Person3" ,"Common" ,"-n!iri"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-VerbStemStructure1",
+    "note": "K94s7(p.122) :: The verb stem inflection consists of the following possible sequence:STEM - person - aspectMood - number - negation – interr :: [The exclamation sign !is used by Kiessling as a morphophonemic indicator of (regressive or progressive) vowel shortening,and,when progressive,consonant devoicing. Cf. 4.1.11 (pp. 43f)]",
+    "common": {
+      "pos": "Verb",
+      "morphClass": "VerbStemStructure1"
+    },
+    "terms": [
+      ["stemInflCategory" ,"stemInflMorpheme" ,"token"],
+      ["Person" ,"Singular_Person1" ,"∅, -u-"],
+      ["Person" ,"Singular_Person2_or_Person3_Fem" ,"-id, -t"],
+      ["Person" ,"Singular_Person3_Masc" ,"-i, -n!"],
+      ["Person" ,"Plural_Person1" ,"-an, -in, -n"],
+      ["AspectMood" ,"Imperfect" ,"-a"],
+      ["AspectMood" ,"Perfect" ,"-i"],
+      ["AspectMood" ,"Subjunctive" ,"-ee"],
+      ["Number" ,"Singular" ,"-∅"],
+      ["Number" ,"NumNonPerf" ,"Plural" ,"-‘i"],
+      ["Number" ,"NumPerf" ,"Plural" ,"-ri"],
+      ["Negative" ,"Negative" ,"-baɬi"],
+      ["SentenceType" ,"AffDecl" ,"{phonReduction} Declarative"],
+      ["SentenceType" ,"InterrogDir" ,"∅ HL#"],
+      ["SentenceType" ,"InterrogRhet" ,"-la HL#"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-VerbVsAdjNeg-ʔar-",
+    "note": "K94s9.5.3 :: Der adjektivische Charakter des Negationssuffixes -baɬi :: The following paradigm illustrates the difference between the verbal suffix -baɬi,which gets reduced to –ba in the declarative,and the adjective baɬ,which undergoes no such reduction.",
+    "common": {
+      "lexeme": "ʔar",
+      "person": "Person2",
+      "pos": "Verb",
+      "morphClass": "VerbVsAdjNeg"
+    },
+    "terms": [
+      ["polarity" ,"predType" ,"number" ,"gender" ,"token"],
+      ["NegInterr" ,"Adjectival" ,"Singular" ,"Masc" ,"hagung báɬu ‘arimaa"],
+      ["NegInterr" ,"Adjectival" ,"Singular" ,"Fem" ,"haging báɬi ‘arimaa"],
+      ["NegInterr" ,"Adjectival" ,"Plural" ,"Common" ,"hangung báɬi ‘arimaa"],
+      ["NegInterr" ,"Verbal" ,"Singular" ,"Masc" ,"hang ‘arintíibaɬi"],
+      ["NegInterr" ,"Verbal" ,"Singular" ,"Fem" ,"hang ‘arintíibaɬi"],
+      ["NegInterr" ,"Verbal" ,"Plural" ,"Common" ,"hang ‘arintiríibaɬi"],
+      ["Negative" ,"Adjectival" ,"Singular" ,"Masc" ,"hagung baɬŭ ‘arimaa"],
+      ["Negative" ,"Adjectival" ,"Singular" ,"Fem" ,"haging baɬĭ ‘arimaa"],
+      ["Negative" ,"Adjectival" ,"Plural" ,"Common" ,"hangung baɬĭ ‘arimaa"],
+      ["Negative" ,"Verbal" ,"Singular" ,"Masc" ,"hang ‘arintiiba"],
+      ["Negative" ,"Verbal" ,"Singular" ,"Fem" ,"hang ‘arintiiba"],
+      ["Negative" ,"Verbal" ,"Plural" ,"Common" ,"hang ‘arintiriiba"]
+    ]
+  },
+  {
+    "label": "brn-morphVerb-VerbalnounNeg-doosl-Negative",
+    "note": "K94s9.5.3 :: Der adjektivische Charakter des Negationssuffixes -baɬi. This is a nominal type negative construction :: The adjectivally inflected baɬ comes inbetween the selector and the verbal noun form of the verb. Paradigm gives by way of example the second person forms.",
+    "common": {
+      "lexeme": "doosl",
+      "person": "Person2",
+      "polarity": "Negative",
+      "pos": "Verb",
+      "morphClass": "VerbalnounNeg"
+    },
+    "terms": [
+      ["tenseSel" ,"number" ,"gender" ,"token"],
+      ["Completive" ,"Singular" ,"Masc" ,"hagung baɬu dooɬa"],
+      ["Completive" ,"Singular" ,"Fem" ,"haging baɬi dooɬa"],
+      ["Completive" ,"Plural" ,"Common" ,"hangung baɬi dooɬa"],
+      ["Future1" ,"Singular" ,"Masc" ,"hagwaa baɬu dooɬa"],
+      ["Future1" ,"Singular" ,"Fem" ,"hagiyaa baɬi dooɬa"],
+      ["Future1" ,"Plural" ,"Common" ,"hangwaa baɬi dooɬa"],
+      ["Future2" ,"Singular" ,"Masc" ,"hagumaa baɬu dooɬa"],
+      ["Future2" ,"Singular" ,"Fem" ,"hagimaa baɬi dooɬa"],
+      ["Future2" ,"Plural" ,"Common" ,"hangumaa baɬi dooɬa"],
+      ["Habitual" ,"Singular" ,"Masc" ,"hagóo baɬu dooɬa"],
+      ["Habitual" ,"Singular" ,"Fem" ,"hagiyóo baɬi dooɬa"],
+      ["Habitual" ,"Plural" ,"Common" ,"hangóo baɬi dooɬa"],
+      ["Present" ,"Singular" ,"Masc" ,"hagu baɬu dooɬa"],
+      ["Present" ,"Singular" ,"Fem" ,"hagi baɬi dooɬa"],
+      ["Present" ,"Plural" ,"Common" ,"hangu baɬi dooɬa"],
+      ["Preterite" ,"Singular" ,"Masc" ,"hagwáa baɬu dooɬa"],
+      ["Preterite" ,"Singular" ,"Fem" ,"hagiyáa baɬi dooɬa"],
+      ["Preterite" ,"Plural" ,"Common" ,"hangwáa baɬi dooɬa"],
+      ["Prospective" ,"Singular" ,"Masc" ,"hagoo baɬu dooɬa"],
+      ["Prospective" ,"Singular" ,"Fem" ,"hagiyoo baɬi dooɬa"],
+      ["Prospective" ,"Plural" ,"Common" ,"hangoo baɬi dooɬa"]
     ]
   }
 ]}
